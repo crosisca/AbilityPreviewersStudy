@@ -9,6 +9,6 @@ public class Ability
 
     public bool IsPreviewPositionValid(Vector3 position)
     {
-        return true;
+        return !Input.GetKey(KeyCode.LeftShift);
     }
 }

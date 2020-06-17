@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class CharacterLockedAbilityPreviewer : MonoBehaviour, IAbilityPreviewer
+public class FollowMousePreviewer : MonoBehaviour, IAbilityPreviewer
 {
     [SerializeField]
     Material scalableQuadMaterial;
@@ -25,24 +25,27 @@ public class CharacterLockedAbilityPreviewer : MonoBehaviour, IAbilityPreviewer
         scalableQuad = GameObject.CreatePrimitive(PrimitiveType.Quad).transform;
         scalableQuad.name = "ScalableQuad";
         scalableQuad.SetParent(transform);
-        scalableQuad.transform.localPosition = new Vector3(0, 0, 0.5f);
+        scalableQuad.transform.localPosition = Vector3.zero;
         scalableQuad.transform.localRotation = Quaternion.Euler(90, 0, 0);
         scalableQuad.transform.localScale = Vector3.one * radiusScaleRatio;
 
         scalableQuad.GetComponent<Renderer>().material = scalableQuadMaterial;
     }
-
+    
     public void CalculateTargetLocation ()
     {
-        target.position = controller.champion.TransformPoint(controller.offset);
+        if (!MathUtils.IsInsideCircle(controller.Origin, controller.maxRange, controller.MouseHitPosition))
+            target.position = controller.Origin + (controller.MouseHitPosition - controller.Origin).normalized * controller.maxRange;
+        else
+            target.position = controller.MouseHitPosition;
     }
 
     public void CalculateTargetRotation ()
     {
-        if (Mathf.Approximately((TargetPosition - controller.Origin).magnitude, 0))
+        if(Mathf.Approximately((target.position - controller.Origin).magnitude, 0))
             target.rotation = Quaternion.identity;
         else
-            target.rotation = Quaternion.LookRotation(TargetPosition.FlattenY() - controller.Origin.FlattenY(), Vector3.up);
+            target.rotation = Quaternion.LookRotation(target.position.FlattenY() - controller.Origin.FlattenY(), Vector3.up);
     }
 
     public void SetPosition ()

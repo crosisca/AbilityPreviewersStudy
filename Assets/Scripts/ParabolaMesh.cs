@@ -32,6 +32,8 @@ public class ParabolaMesh : MonoBehaviour
 
     List<Vector3> currentCalculatedPositions = new List<Vector3>();
 
+    Transform transformToAttach;
+
     private void Awake()
     {
         mesh = new Mesh();
@@ -43,18 +45,12 @@ public class ParabolaMesh : MonoBehaviour
     {
         meshFilter.mesh = mesh;
     }
-
-
-    public void Initialize(Transform transformToAttach, Transform target)
-    {
-        Initialize(transformToAttach, target, gravity, angle, meshThickness, offset, meshMaterial, amountOfPoints);
-    }
-
+    
     public void Initialize(Transform transformToAttach, Transform target, float gravity, float angle, float meshThickness, Vector3 offset, Material material, int amountOfPoints = 40)
     {
-        transform.SetParent(transformToAttach);
-        transform.localPosition = Vector3.zero + offset;
+        transform.position = transformToAttach.position + transformToAttach.rotation * offset;
 
+        this.transformToAttach = transformToAttach;
         this.offset = offset;
         this.target = target;
         this.angle = angle;
@@ -67,28 +63,17 @@ public class ParabolaMesh : MonoBehaviour
             meshMaterial = material;
             meshRenderer.material = meshMaterial;
         }
-
-        shouldUpdate = true;
-        //GameSession.Current.Updater.RegisterUpdate(OnUpdate);
     }
-
-    bool shouldUpdate = false;
-
+    
     void Update()
     {
-        if(shouldUpdate)
-            OnUpdate();
-    }
+        transform.position = transformToAttach.position + transformToAttach.rotation * offset;
 
-    void OnUpdate()
-    {
-        transform.localPosition = Vector3.zero + offset;
         CheckIfSettingsHasChanged();
         GetParabolaPositions();
         UpdateMesh();
     }
     
-
     void UpdateMesh()
     {
         for (int positionIndex = 1, mesh4Index = 0, triangleIndex = 0; positionIndex < currentCalculatedPositions.Count; positionIndex++, mesh4Index+=4, triangleIndex+=6)
@@ -150,16 +135,6 @@ public class ParabolaMesh : MonoBehaviour
             for (int t = 0; t < 6; t++)
                 newTriangles.Add(0);
         }
-    }
-
-    private void OnDisable()
-    {
-        shouldUpdate = false;
-        //if (!GameSession.Current)
-        //    return;
-
-        //if (GameSession.Current.Updater)
-        //    GameSession.Current.Updater.UnregisterUpdate(OnUpdate);
     }
 
     List<Vector3> GetParabolaPositions()

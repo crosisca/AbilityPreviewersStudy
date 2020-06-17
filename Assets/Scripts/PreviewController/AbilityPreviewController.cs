@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Linq;
+using UnityEngine;
 
 public class AbilityPreviewController : MonoBehaviour
 {
@@ -8,59 +9,40 @@ public class AbilityPreviewController : MonoBehaviour
 
     //Assigned by injection
     [SerializeField]
-    protected float maxRange = Mathf.Infinity;
+    public float maxRange = Mathf.Infinity;
 
     //Assigned by injection
     [SerializeField]
-    protected Vector3 offset;
+    public Vector3 offset;
 
     //Assigned by injection
     Ability ability;
 
     public bool IsValid { get; private set; }
-    protected Vector3 Origin => champion.position;
+    public Vector3 Origin => champion.position;
 
-
-    protected Transform target;
-    protected Vector3 mouseHitPosition;
-    protected Vector3 TargetPosition => target.position;
-    protected Quaternion targetRotation;
-
-    
-
+    public Vector3 MouseHitPosition { get; private set; }
     
     //Assigned on editor
     [SerializeField]
-    protected bool canRotate = true;
+    public bool canRotate = true;
 
 
-    
+    IAbilityPreviewer[] previewers;
 
     #region Trajectory
     protected bool showTrajectory;
     protected ParabolaMesh trajectoryParabola;
     #endregion
 
-    public void Setup (Transform champion, Ability ability)
+    public void Setup (Transform champion, Ability ability, float maxRange = Mathf.Infinity, Vector3 offset = default)
     {
         this.champion = champion;
         this.ability = ability;
-    }
-
-    public void Setup(Transform champion, Ability ability, Vector3 offset)
-    {
-        Setup(champion, ability);
-
+        this.maxRange = maxRange;
         this.offset = offset;
     }
-
-    public void Setup (Transform champion, Ability ability, float maxRange)
-    {
-        Setup(champion, ability);
-
-        this.maxRange = maxRange;
-    }
-
+    
     void Awake()
     {
         ability = new Ability();
@@ -70,91 +52,36 @@ public class AbilityPreviewController : MonoBehaviour
 
     protected virtual void Initialize()
     {
-        target = new GameObject("target").transform;
-        target.SetParent(transform);
+        previewers = GetComponentsInChildren<IAbilityPreviewer>();
 
-        if (!canRotate)
-            transform.rotation = Quaternion.identity;
-
-        trajectoryParabola = GetComponentInChildren<ParabolaMesh>();
-
-        if (trajectoryParabola != null)
-        {
-            showTrajectory = true;
-            trajectoryParabola.Initialize(champion, target);
-        }
-
-       
+        foreach (IAbilityPreviewer abilityPreviewer in previewers)
+            abilityPreviewer.Initialize();
     }
 
     void Update()
     {
-        OnUpdate();
-    }
+        MouseHitPosition = Camera.main.ScreenPointToRay(Input.mousePosition).GetIntersectionPoint();
 
-    protected virtual void OnUpdate ()
-    {
-        mouseHitPosition = Camera.main.ScreenPointToRay(Input.mousePosition).GetIntersectionPoint();
-
-        CalculateTargetLocation();
-        CalculateTargetRotation();
-
-        IsValid = !ability.Previewable || ability.IsPreviewPositionValid(TargetPosition);
-
-        if (IsValid)
+        foreach (IAbilityPreviewer abilityPreviewer in previewers)
         {
-            SetPosition();
-            SetRotation();
-            SetScale();
+            abilityPreviewer.CalculateTargetLocation();
+            abilityPreviewer.CalculateTargetRotation();
+        }
+
+
+        foreach (IAbilityPreviewer abilityPreviewer in previewers)
+        {
+            IsValid = !ability.Previewable || ability.IsPreviewPositionValid(abilityPreviewer.TargetPosition);
+
+            if (!IsValid)
+                continue;
+
+            abilityPreviewer.SetPosition();
+            abilityPreviewer.SetRotation();
+            abilityPreviewer.SetScale();
         }
     }
     
-    protected virtual void CalculateTargetLocation()
-    {
-
-    }
-
-    protected virtual void CalculateTargetRotation()
-    {
-
-    }
-
-    protected virtual void SetPosition ()
-    {
-        transform.position = TargetPosition;
-    }
-
-    protected virtual void SetRotation()
-    {
-        //old mouse mode rotation//transform.rotation = Quaternion.LookRotation(CamerasManager.Current.CurrentActiveCamera.Camera.transform.forward.FlattenY(), Vector3.up); //WHAT????
-        if (!canRotate)
-            return;
-
-        transform.rotation = targetRotation;
-    }
-
-    protected virtual void SetScale ()
-    {
-        
-    }
-    
-    public virtual void Enable ()
-    {
-        gameObject.SetActive(true);
-
-        if (showTrajectory)
-            trajectoryParabola.gameObject.SetActive(true);
-    }
-
-
-    public virtual void Disable ()
-    {
-        gameObject.SetActive(false);
-
-        if (showTrajectory)
-            trajectoryParabola.gameObject.SetActive(false);
-    }
-
     #region Skydome Specific
     //public virtual void Enable ()
     //{
