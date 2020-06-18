@@ -15,6 +15,12 @@ public class AbilityPreviewController : MonoBehaviour
     [SerializeField]
     public Vector3 offset;
 
+    [SerializeField]
+    public float areaRadius;
+
+    [SerializeField]
+    public Vector3 areaScale;
+
     //Assigned by injection
     Ability ability;
 
