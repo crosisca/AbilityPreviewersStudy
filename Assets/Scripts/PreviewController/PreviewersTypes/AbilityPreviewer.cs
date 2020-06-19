@@ -17,13 +17,10 @@ public class AbilityPreviewer : SerializedMonoBehaviour
     public Transform Champion { get; private set; }
 
     //[ReadOnly]
-    public List<PreviewConfig<object>> PreviewConfigs = new List<PreviewConfig<object>>();
+    public List<PreviewConfig> PreviewConfigs = new List<PreviewConfig>();
 
     public Vector3 MouseHitPosition { get; private set; }
-
-    [ReadOnly]
-    public List<PreviewPositioner> positioners = new List<PreviewPositioner>();
-
+    
     void Awake()
     {
         Ability = new Ability();
@@ -33,24 +30,15 @@ public class AbilityPreviewer : SerializedMonoBehaviour
 
     void CacheAbilityValues()
     {
-        foreach (PreviewConfig<object> previewConfig in PreviewConfigs)
-        {
-            foreach (FieldInfo fieldInfo in Ability.GetType().GetFields(BindingFlags.Public | BindingFlags.Instance))
-            {
-                if (previewConfig.Variables.ContainsKey(fieldInfo.Name))
-                    previewConfig.Variables[fieldInfo.Name] = fieldInfo.GetValue(Ability);
-            }
-
-            previewConfig.positioner.Initialize(this, previewConfig);
-            previewConfig.scaler.Initialize(this, previewConfig);
-        }
+        foreach (PreviewConfig previewConfig in PreviewConfigs)
+            previewConfig.Setup(this);
     }
 
     void Update()
     {
         MouseHitPosition = Camera.main.ScreenPointToRay(Input.mousePosition).GetIntersectionPoint();
 
-        foreach (PreviewConfig<object> previewConfig in PreviewConfigs)
+        foreach (PreviewConfig previewConfig in PreviewConfigs)
         {
             previewConfig.positioner.CalculateTargetLocation();
             previewConfig.positioner.CalculateTargetRotation();
@@ -63,7 +51,7 @@ public class AbilityPreviewer : SerializedMonoBehaviour
             previewConfig.positioner.SetPosition();
             previewConfig.positioner.SetRotation();
 
-            previewConfig.scaler.SetScale();
+            previewConfig.scaler.UpdateScale();
         }
     }
 }

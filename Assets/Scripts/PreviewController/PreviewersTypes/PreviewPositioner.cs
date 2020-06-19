@@ -6,17 +6,17 @@ public class PreviewPositioner
 {
     protected AbilityPreviewer previewer;
 
-    protected PreviewConfig<object> previewConfig;
+    protected PreviewConfig previewConfig;
 
-    protected Transform target;
+    public Transform Target { get; protected set; }
     public Transform PositionerTransform { get; private set; }
 
-    public virtual Vector3 TargetPosition => target.position;
-    public virtual Quaternion TargetRotation => target.rotation;
+    public virtual Vector3 TargetPosition => Target.position;
+    public virtual Quaternion TargetRotation => Target.rotation;
     public virtual Vector3 Origin => previewer.Champion.position;
 
 
-    public virtual void Initialize(AbilityPreviewer previewer, PreviewConfig<object> previewConfig)
+    public virtual void Setup(AbilityPreviewer previewer, PreviewConfig previewConfig)
     {
         this.previewer = previewer;
         this.previewConfig = previewConfig;
@@ -24,8 +24,8 @@ public class PreviewPositioner
         PositionerTransform = new GameObject($"{GetType()}").transform;
         PositionerTransform.SetParent(previewer.transform);
 
-        target = new GameObject("Target").transform;
-        target.SetParent(PositionerTransform);
+        Target = new GameObject("Target").transform;
+        Target.SetParent(PositionerTransform);
     }
            
     public virtual void CalculateTargetLocation () { }

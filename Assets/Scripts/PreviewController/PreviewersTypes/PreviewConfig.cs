@@ -1,18 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Reflection;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
-//public class PositionerConfig
-//{
-//    [SerializeField]
-//    public AbilityPreviewPositionMode PositionMode;
-
-//    [SerializeField]
-//    public PreviewPositioner positioner;
-//}
-
-public class PreviewConfig<T>
+public class PreviewConfig
 {
     [SerializeField]
     public PreviewPositioner positioner;
@@ -23,22 +15,47 @@ public class PreviewConfig<T>
     [SerializeField]
     public Material Material { get; set; }
 
-    //[SerializeField]
-    //public string VariableName { get; set; }
+    [SerializeField, ShowIf("@UnityEngine.Application.isPlaying")]
+    Dictionary<string, object> _variables;
+    public Dictionary<string, object> Variables => _variables ?? (_variables = new Dictionary<string, object>());
 
-    //[SerializeField, /*, ReadOnly*/]
-    //public T Value { get; set; }
+    AbilityPreviewer previewer;
 
-    Dictionary<string, T> _variables;
-    [SerializeField/*, ReadOnly*/]
-    public Dictionary<string, T> Variables { get; set; }
-    //{
-    //    get
-    //    {
-    //        if(_variables == null)
-    //            _variables = new Dictionary<string, T>();
-    //        return _variables;
-    //    }
-    //    set { _variables = value; }
-    //}
+    public void Setup(AbilityPreviewer previewer)
+    {
+        this.previewer = previewer;
+        CacheUsedVariables();
+        
+        positioner.Setup(previewer, this);
+        scaler.Setup(previewer, this);
+    }
+
+    public void CacheUsedVariables ()
+    {
+        AddAbilityDatabaseVariableNameToDictionary(positioner);
+        AddAbilityDatabaseVariableNameToDictionary(scaler);
+
+        foreach (FieldInfo fieldInfo in previewer.Ability.GetType().GetFields(BindingFlags.Public | BindingFlags.Instance))
+        {
+            if (Variables.ContainsKey(fieldInfo.Name))
+                Variables[fieldInfo.Name] = fieldInfo.GetValue(previewer.Ability);
+        }
+    }
+
+
+    void AddAbilityDatabaseVariableNameToDictionary(object objToLookForAttribute)
+    {
+        foreach (FieldInfo positionerField in objToLookForAttribute.GetType().GetFields(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance))
+        {
+            AbilityDatabaseValueAttribute abilityDbValue = Attribute.GetCustomAttribute(positionerField, typeof(AbilityDatabaseValueAttribute)) as AbilityDatabaseValueAttribute;
+
+            if (abilityDbValue != null)
+                Variables.Add((string)positionerField.GetValue(objToLookForAttribute), null);
+        }
+    }
+
+    public T GetValue<T> (string variableName)
+    {
+        return (T)Variables[variableName];
+    }
 }

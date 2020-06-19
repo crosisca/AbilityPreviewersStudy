@@ -65,7 +65,7 @@ public class ParabolaMesh : MonoBehaviour
         }
     }
     
-    void Update()
+    public void ForceUpdate()
     {
         transform.position = transformToAttach.position + transformToAttach.rotation * offset;
 
