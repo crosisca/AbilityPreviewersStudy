@@ -23,15 +23,25 @@ public class AbilityPreviewer : SerializedMonoBehaviour
     
     void Awake()
     {
-        Ability = new Ability();
+        if (Champion == null)
+            Champion = GameObject.FindWithTag("Player").transform;
+
+        Ability = Champion.GetComponent<Champion>().ability;
 
         CacheAbilityValues();
     }
-
+    
     void CacheAbilityValues()
     {
         foreach (PreviewConfig previewConfig in PreviewConfigs)
             previewConfig.Setup(this);
+    }
+
+    [ContextMenu("ResyncDBVariables")]
+    void DebugResyncAbilityValues()
+    {
+        foreach (PreviewConfig previewConfig in PreviewConfigs)
+            previewConfig.CacheUsedVariables();
     }
 
     void Update()
@@ -52,6 +62,7 @@ public class AbilityPreviewer : SerializedMonoBehaviour
             previewConfig.positioner.SetRotation();
 
             previewConfig.scaler.UpdateScale();
+            previewConfig.scaler.SetMaterialProperties();
         }
     }
 }

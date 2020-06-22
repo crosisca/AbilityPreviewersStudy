@@ -22,10 +22,10 @@ public class ScaleToMouseScaler : PreviewScaler
         scalableMeshPivot.localPosition = Vector3.zero;
         scalableMeshPivot.localRotation = Quaternion.identity;
 
-        scalableQuad.name = "AimToMouseScalableQuad";
-        scalableQuad.SetParent(scalableMeshPivot, false);
-        scalableQuad.localPosition = new Vector3(0, 0, 0.5f);
-        scalableQuad.localRotation = Quaternion.Euler(90, 0, 0);
+        scalableMesh.name = "AimToMouseScalableQuad";
+        scalableMesh.SetParent(scalableMeshPivot, false);
+        scalableMesh.localPosition = new Vector3(0, 0, 0.5f);
+        scalableMesh.localRotation = Quaternion.Euler(90, 0, 0);
     }
     
     public override void SetScale ()

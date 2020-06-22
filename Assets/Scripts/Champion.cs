@@ -7,6 +7,8 @@ public class Champion : MonoBehaviour
     [SerializeField]
     float moveSpeed = 5;
 
+    public Ability ability;
+
     // Update is called once per frame
     void Update()
     {

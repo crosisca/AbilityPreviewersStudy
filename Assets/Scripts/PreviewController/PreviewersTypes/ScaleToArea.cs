@@ -36,7 +36,7 @@ public class ScaleToArea : PreviewScaler
     {
         base.Initialize();
 
-        scalableQuad.name = $"ScaleTo{areaScaleMode.ToString()}Quad";
+        scalableMesh.name = $"ScaleTo{areaScaleMode.ToString()}Quad";
     }
 
     public override void SetScale ()
@@ -44,18 +44,18 @@ public class ScaleToArea : PreviewScaler
         switch (areaScaleMode)
         {
             case AreaMode.RADIUS:
-                scalableQuad.localScale = Vector3.one * previewConfig.GetValue<float>(radiusVar) * quadToRadiusScaleRatio;
+                scalableMesh.localScale = Vector3.one * previewConfig.GetValue<float>(radiusVar) * quadToRadiusScaleRatio;
                 break;
             case AreaMode.XZ:
-                scalableQuad.localScale = new Vector3(previewConfig.GetValue<float>(areaWidthVar), previewConfig.GetValue<float>(areaLengthVar), 1);
+                scalableMesh.localScale = new Vector3(previewConfig.GetValue<float>(areaWidthVar), previewConfig.GetValue<float>(areaLengthVar), 1);
                 break;
             case AreaMode.VECTOR2:
                 Vector2 vec2area = previewConfig.GetValue<Vector2>(areaInVector2Var);
-                scalableQuad.localScale = new Vector3(vec2area.x, vec2area.y, 1);
+                scalableMesh.localScale = new Vector3(vec2area.x, vec2area.y, 1);
                 break;
             case AreaMode.VECTOR3:
                 Vector3 vec3area = previewConfig.GetValue<Vector3>(areaInVector3Var);
-                scalableQuad.localScale = new Vector3(vec3area.x, vec3area.z, vec3area.y);
+                scalableMesh.localScale = new Vector3(vec3area.x, vec3area.z, vec3area.y);
                 break;
             default:
                 throw new ArgumentOutOfRangeException();

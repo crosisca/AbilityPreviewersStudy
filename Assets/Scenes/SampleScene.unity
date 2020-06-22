@@ -212,6 +212,136 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 66679059}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &111375136
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 111375138}
+  - component: {fileID: 111375137}
+  m_Layer: 0
+  m_Name: Previewer (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &111375137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 111375136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75dd4d5cfdc460545b5acffb427fc081, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 2138096739}
+    - {fileID: 2100000, guid: 1af246a4eb52ed243a96a002599ed6b0, type: 2}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Champion
+      Entry: 10
+      Data: 0
+    - Name: PreviewConfigs
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[PreviewConfig, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|PreviewConfig, Assembly-CSharp
+    - Name: Material
+      Entry: 10
+      Data: 1
+    - Name: positioner
+      Entry: 7
+      Data: 2|FollowMousePositioner, Assembly-CSharp
+    - Name: canRotate
+      Entry: 5
+      Data: true
+    - Name: maxDistanceVar
+      Entry: 1
+      Data: maxDistanceFromOrigin
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: scaler
+      Entry: 7
+      Data: 3|ScaleToArea, Assembly-CSharp
+    - Name: meshMode
+      Entry: 3
+      Data: 1
+    - Name: canScale
+      Entry: 5
+      Data: true
+    - Name: useAngleMask
+      Entry: 5
+      Data: true
+    - Name: angleVar
+      Entry: 1
+      Data: areaAngle
+    - Name: areaScaleMode
+      Entry: 3
+      Data: 0
+    - Name: radiusVar
+      Entry: 1
+      Data: areaRadiusFloat
+    - Name: areaInVector3Var
+      Entry: 6
+      Data: 
+    - Name: areaInVector2Var
+      Entry: 6
+      Data: 
+    - Name: areaWidthVar
+      Entry: 6
+      Data: 
+    - Name: areaLengthVar
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _variables
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+--- !u!4 &111375138
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 111375136}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &214296931
 GameObject:
   m_ObjectHideFlags: 0
@@ -269,77 +399,9 @@ MonoBehaviour:
     - Name: Material
       Entry: 10
       Data: 1
-    - Name: Variables
-      Entry: 7
-      Data: 2|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object,
-        mscorlib]], mscorlib
-    - Name: comparer
-      Entry: 7
-      Data: 3|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
-        mscorlib]], mscorlib
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 12
-      Data: 4
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: dashArea
-    - Name: $v
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: maxDistanceFromOrigin
-    - Name: $v
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: DamageAreaRadius
-    - Name: $v
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: areaVec3
-    - Name: $v
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
     - Name: positioner
       Entry: 7
-      Data: 4|FollowMousePositioner, Assembly-CSharp
+      Data: 2|FollowMousePositioner, Assembly-CSharp
     - Name: canRotate
       Entry: 5
       Data: false
@@ -351,10 +413,19 @@ MonoBehaviour:
       Data: 
     - Name: scaler
       Entry: 7
-      Data: 5|ScaleToArea, Assembly-CSharp
+      Data: 3|ScaleToArea, Assembly-CSharp
+    - Name: meshMode
+      Entry: 3
+      Data: 0
     - Name: canScale
       Entry: 5
       Data: true
+    - Name: useAngleMask
+      Entry: 5
+      Data: false
+    - Name: angleVar
+      Entry: 6
+      Data: 
     - Name: areaScaleMode
       Entry: 3
       Data: 0
@@ -376,86 +447,21 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+    - Name: _variables
+      Entry: 6
+      Data: 
     - Name: 
       Entry: 8
       Data: 
     - Name: 
       Entry: 7
-      Data: 6|PreviewConfig, Assembly-CSharp
+      Data: 4|PreviewConfig, Assembly-CSharp
     - Name: Material
       Entry: 10
       Data: 2
-    - Name: Variables
-      Entry: 7
-      Data: 7|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object,
-        mscorlib]], mscorlib
-    - Name: comparer
-      Entry: 7
-      Data: 8|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
-        mscorlib]], mscorlib
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 12
-      Data: 4
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: maxDistanceFromOrigin
-    - Name: $v
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: areaWidth
-    - Name: $v
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: areaLength
-    - Name: $v
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: dashArea
-    - Name: $v
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
     - Name: positioner
       Entry: 7
-      Data: 9|AimToMousePositioner, Assembly-CSharp
+      Data: 5|AimToMousePositioner, Assembly-CSharp
     - Name: maxDistanceVar
       Entry: 1
       Data: maxDistanceFromOrigin
@@ -464,10 +470,19 @@ MonoBehaviour:
       Data: 
     - Name: scaler
       Entry: 7
-      Data: 10|ScaleToMouseScaler, Assembly-CSharp
+      Data: 6|ScaleToMouseScaler, Assembly-CSharp
+    - Name: meshMode
+      Entry: 3
+      Data: 0
     - Name: canScale
       Entry: 5
       Data: true
+    - Name: useAngleMask
+      Entry: 5
+      Data: false
+    - Name: angleVar
+      Entry: 6
+      Data: 
     - Name: areaSizeVar
       Entry: 1
       Data: dashArea
@@ -479,6 +494,9 @@ MonoBehaviour:
       Data: false
     - Name: 
       Entry: 8
+      Data: 
+    - Name: _variables
+      Entry: 6
       Data: 
     - Name: 
       Entry: 8
@@ -559,101 +577,9 @@ MonoBehaviour:
     - Name: Material
       Entry: 10
       Data: 1
-    - Name: Variables
-      Entry: 7
-      Data: 2|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object,
-        mscorlib]], mscorlib
-    - Name: comparer
-      Entry: 7
-      Data: 3|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
-        mscorlib]], mscorlib
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 12
-      Data: 6
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: maxDistanceFromOrigin
-    - Name: $v
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: areaRadiusFloat
-    - Name: $v
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: areaWidth
-    - Name: $v
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: areaLength
-    - Name: $v
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: areaVec2
-    - Name: $v
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: areaVec3
-    - Name: $v
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
     - Name: positioner
       Entry: 7
-      Data: 4|FollowMousePositioner, Assembly-CSharp
+      Data: 2|FollowMousePositioner, Assembly-CSharp
     - Name: canRotate
       Entry: 5
       Data: true
@@ -665,10 +591,19 @@ MonoBehaviour:
       Data: 
     - Name: scaler
       Entry: 7
-      Data: 5|ScaleToArea, Assembly-CSharp
+      Data: 3|ScaleToArea, Assembly-CSharp
+    - Name: meshMode
+      Entry: 3
+      Data: 0
     - Name: canScale
       Entry: 5
       Data: true
+    - Name: useAngleMask
+      Entry: 5
+      Data: false
+    - Name: angleVar
+      Entry: 6
+      Data: 
     - Name: areaScaleMode
       Entry: 3
       Data: 3
@@ -689,6 +624,9 @@ MonoBehaviour:
       Data: areaLength
     - Name: 
       Entry: 8
+      Data: 
+    - Name: _variables
+      Entry: 6
       Data: 
     - Name: 
       Entry: 8
@@ -713,6 +651,135 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &441245020
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 441245021}
+  - component: {fileID: 441245022}
+  m_Layer: 0
+  m_Name: KregQ
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &441245021
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441245020}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2091336234}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &441245022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441245020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75dd4d5cfdc460545b5acffb427fc081, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 2100000, guid: fc575301c84ddde4092013dc17211498, type: 2}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Champion
+      Entry: 6
+      Data: 
+    - Name: PreviewConfigs
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[PreviewConfig, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|PreviewConfig, Assembly-CSharp
+    - Name: Material
+      Entry: 10
+      Data: 0
+    - Name: positioner
+      Entry: 7
+      Data: 2|FollowMousePositioner, Assembly-CSharp
+    - Name: canRotate
+      Entry: 5
+      Data: true
+    - Name: maxDistanceVar
+      Entry: 1
+      Data: maxDistanceFromOrigin
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: scaler
+      Entry: 7
+      Data: 3|ScaleToArea, Assembly-CSharp
+    - Name: meshMode
+      Entry: 3
+      Data: 0
+    - Name: canScale
+      Entry: 5
+      Data: true
+    - Name: useAngleMask
+      Entry: 5
+      Data: false
+    - Name: angleVar
+      Entry: 6
+      Data: 
+    - Name: areaScaleMode
+      Entry: 3
+      Data: 0
+    - Name: radiusVar
+      Entry: 1
+      Data: Range
+    - Name: areaInVector3Var
+      Entry: 6
+      Data: 
+    - Name: areaInVector2Var
+      Entry: 6
+      Data: 
+    - Name: areaWidthVar
+      Entry: 6
+      Data: 
+    - Name: areaLengthVar
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _variables
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
 --- !u!1 &683151597
 GameObject:
   m_ObjectHideFlags: 0
@@ -996,7 +1063,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1023338158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1036,101 +1103,9 @@ MonoBehaviour:
     - Name: Material
       Entry: 10
       Data: 1
-    - Name: Variables
-      Entry: 7
-      Data: 2|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object,
-        mscorlib]], mscorlib
-    - Name: comparer
-      Entry: 7
-      Data: 3|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
-        mscorlib]], mscorlib
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 12
-      Data: 6
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: maxDistanceFromOrigin
-    - Name: $v
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: areaRadiusFloat
-    - Name: $v
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: areaWidth
-    - Name: $v
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: areaLength
-    - Name: $v
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: areaVec2
-    - Name: $v
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: areaVec3
-    - Name: $v
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
     - Name: positioner
       Entry: 7
-      Data: 4|AimToMousePositioner, Assembly-CSharp
+      Data: 2|AimToMousePositioner, Assembly-CSharp
     - Name: maxDistanceVar
       Entry: 1
       Data: maxDistanceFromOrigin
@@ -1139,10 +1114,19 @@ MonoBehaviour:
       Data: 
     - Name: scaler
       Entry: 7
-      Data: 5|ParabolaPreviewer, Assembly-CSharp
+      Data: 3|ParabolaPreviewer, Assembly-CSharp
+    - Name: meshMode
+      Entry: 3
+      Data: 0
     - Name: canScale
       Entry: 5
       Data: true
+    - Name: useAngleMask
+      Entry: 5
+      Data: false
+    - Name: angleVar
+      Entry: 6
+      Data: 
     - Name: gravity
       Entry: 4
       Data: 60
@@ -1172,6 +1156,9 @@ MonoBehaviour:
       Data: 40
     - Name: 
       Entry: 8
+      Data: 
+    - Name: _variables
+      Entry: 6
       Data: 
     - Name: 
       Entry: 8
@@ -1252,101 +1239,9 @@ MonoBehaviour:
     - Name: Material
       Entry: 10
       Data: 1
-    - Name: Variables
-      Entry: 7
-      Data: 2|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object,
-        mscorlib]], mscorlib
-    - Name: comparer
-      Entry: 7
-      Data: 3|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
-        mscorlib]], mscorlib
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 12
-      Data: 6
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: maxDistanceFromOrigin
-    - Name: $v
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: areaRadiusFloat
-    - Name: $v
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: areaWidth
-    - Name: $v
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: areaLength
-    - Name: $v
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: areaVec2
-    - Name: $v
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: areaVec3
-    - Name: $v
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
     - Name: positioner
       Entry: 7
-      Data: 4|FollowMousePositioner, Assembly-CSharp
+      Data: 2|FollowMousePositioner, Assembly-CSharp
     - Name: canRotate
       Entry: 5
       Data: true
@@ -1358,10 +1253,19 @@ MonoBehaviour:
       Data: 
     - Name: scaler
       Entry: 7
-      Data: 5|ScaleToArea, Assembly-CSharp
+      Data: 3|ScaleToArea, Assembly-CSharp
+    - Name: meshMode
+      Entry: 3
+      Data: 0
     - Name: canScale
       Entry: 5
       Data: false
+    - Name: useAngleMask
+      Entry: 5
+      Data: false
+    - Name: angleVar
+      Entry: 6
+      Data: 
     - Name: areaScaleMode
       Entry: 3
       Data: 0
@@ -1382,6 +1286,9 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 8
+      Data: 
+    - Name: _variables
+      Entry: 6
       Data: 
     - Name: 
       Entry: 8
@@ -1476,53 +1383,9 @@ MonoBehaviour:
     - Name: Material
       Entry: 10
       Data: 1
-    - Name: Variables
-      Entry: 7
-      Data: 2|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object,
-        mscorlib]], mscorlib
-    - Name: comparer
-      Entry: 7
-      Data: 3|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
-        mscorlib]], mscorlib
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 12
-      Data: 2
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: dashArea
-    - Name: $v
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: maxDistanceFromOrigin
-    - Name: $v
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
     - Name: positioner
       Entry: 7
-      Data: 4|AimToMousePositioner, Assembly-CSharp
+      Data: 2|AimToMousePositioner, Assembly-CSharp
     - Name: maxDistanceVar
       Entry: 1
       Data: maxDistanceFromOrigin
@@ -1531,10 +1394,19 @@ MonoBehaviour:
       Data: 
     - Name: scaler
       Entry: 7
-      Data: 5|ScaleToMouseScaler, Assembly-CSharp
+      Data: 3|ScaleToMouseScaler, Assembly-CSharp
+    - Name: meshMode
+      Entry: 3
+      Data: 0
     - Name: canScale
       Entry: 5
       Data: true
+    - Name: useAngleMask
+      Entry: 5
+      Data: false
+    - Name: angleVar
+      Entry: 6
+      Data: 
     - Name: areaSizeVar
       Entry: 1
       Data: dashArea
@@ -1546,6 +1418,9 @@ MonoBehaviour:
       Data: false
     - Name: 
       Entry: 8
+      Data: 
+    - Name: _variables
+      Entry: 6
       Data: 
     - Name: 
       Entry: 8
@@ -1612,53 +1487,9 @@ MonoBehaviour:
     - Name: Material
       Entry: 10
       Data: 1
-    - Name: Variables
-      Entry: 7
-      Data: 2|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object,
-        mscorlib]], mscorlib
-    - Name: comparer
-      Entry: 7
-      Data: 3|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
-        mscorlib]], mscorlib
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 12
-      Data: 2
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: areaRadiusFloat
-    - Name: $v
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: maxDistanceFromOrigin
-    - Name: $v
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
     - Name: positioner
       Entry: 7
-      Data: 4|FollowMousePositioner, Assembly-CSharp
+      Data: 2|FollowMousePositioner, Assembly-CSharp
     - Name: canRotate
       Entry: 5
       Data: true
@@ -1670,15 +1501,24 @@ MonoBehaviour:
       Data: 
     - Name: scaler
       Entry: 7
-      Data: 5|ScaleToRadius, Assembly-CSharp
+      Data: 3|PreviewScaler, Assembly-CSharp
+    - Name: meshMode
+      Entry: 3
+      Data: 0
     - Name: canScale
       Entry: 5
       Data: false
-    - Name: radiusVar
-      Entry: 1
-      Data: areaRadiusFloat
+    - Name: useAngleMask
+      Entry: 5
+      Data: false
+    - Name: angleVar
+      Entry: 6
+      Data: 
     - Name: 
       Entry: 8
+      Data: 
+    - Name: _variables
+      Entry: 6
       Data: 
     - Name: 
       Entry: 8
@@ -1883,101 +1723,9 @@ MonoBehaviour:
     - Name: Material
       Entry: 10
       Data: 1
-    - Name: Variables
-      Entry: 7
-      Data: 2|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object,
-        mscorlib]], mscorlib
-    - Name: comparer
-      Entry: 7
-      Data: 3|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
-        mscorlib]], mscorlib
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 12
-      Data: 6
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: maxDistanceFromOrigin
-    - Name: $v
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: areaRadiusFloat
-    - Name: $v
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: areaWidth
-    - Name: $v
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: areaLength
-    - Name: $v
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: areaVec2
-    - Name: $v
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: areaVec3
-    - Name: $v
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
     - Name: positioner
       Entry: 7
-      Data: 4|FollowMousePositioner, Assembly-CSharp
+      Data: 2|FollowMousePositioner, Assembly-CSharp
     - Name: canRotate
       Entry: 5
       Data: true
@@ -1989,10 +1737,19 @@ MonoBehaviour:
       Data: 
     - Name: scaler
       Entry: 7
-      Data: 5|ScaleToArea, Assembly-CSharp
+      Data: 3|ScaleToArea, Assembly-CSharp
+    - Name: meshMode
+      Entry: 3
+      Data: 0
     - Name: canScale
       Entry: 5
       Data: true
+    - Name: useAngleMask
+      Entry: 5
+      Data: false
+    - Name: angleVar
+      Entry: 6
+      Data: 
     - Name: areaScaleMode
       Entry: 3
       Data: 2
@@ -2013,6 +1770,9 @@ MonoBehaviour:
       Data: areaLength
     - Name: 
       Entry: 8
+      Data: 
+    - Name: _variables
+      Entry: 6
       Data: 
     - Name: 
       Entry: 8
@@ -2093,101 +1853,9 @@ MonoBehaviour:
     - Name: Material
       Entry: 10
       Data: 1
-    - Name: Variables
-      Entry: 7
-      Data: 2|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object,
-        mscorlib]], mscorlib
-    - Name: comparer
-      Entry: 7
-      Data: 3|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
-        mscorlib]], mscorlib
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 12
-      Data: 6
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: maxDistanceFromOrigin
-    - Name: $v
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: areaRadiusFloat
-    - Name: $v
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: areaWidth
-    - Name: $v
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: areaLength
-    - Name: $v
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: areaVec2
-    - Name: $v
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: areaVec3
-    - Name: $v
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
     - Name: positioner
       Entry: 7
-      Data: 4|FollowMousePositioner, Assembly-CSharp
+      Data: 2|FollowMousePositioner, Assembly-CSharp
     - Name: canRotate
       Entry: 5
       Data: true
@@ -2199,10 +1867,19 @@ MonoBehaviour:
       Data: 
     - Name: scaler
       Entry: 7
-      Data: 5|ScaleToArea, Assembly-CSharp
+      Data: 3|ScaleToArea, Assembly-CSharp
+    - Name: meshMode
+      Entry: 3
+      Data: 0
     - Name: canScale
       Entry: 5
       Data: true
+    - Name: useAngleMask
+      Entry: 5
+      Data: false
+    - Name: angleVar
+      Entry: 6
+      Data: 
     - Name: areaScaleMode
       Entry: 3
       Data: 0
@@ -2223,6 +1900,9 @@ MonoBehaviour:
       Data: areaLength
     - Name: 
       Entry: 8
+      Data: 
+    - Name: _variables
+      Entry: 6
       Data: 
     - Name: 
       Entry: 8
@@ -2431,6 +2111,124 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1777623593}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1856346403
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1856346405}
+  - component: {fileID: 1856346404}
+  m_Layer: 0
+  m_Name: Previewer (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1856346404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856346403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75dd4d5cfdc460545b5acffb427fc081, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 2138096739}
+    - {fileID: 2100000, guid: fc575301c84ddde4092013dc17211498, type: 2}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Champion
+      Entry: 10
+      Data: 0
+    - Name: PreviewConfigs
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[PreviewConfig, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|PreviewConfig, Assembly-CSharp
+    - Name: Material
+      Entry: 10
+      Data: 1
+    - Name: positioner
+      Entry: 7
+      Data: 2|AimToMousePositioner, Assembly-CSharp
+    - Name: maxDistanceVar
+      Entry: 1
+      Data: maxDistanceFromOrigin
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: scaler
+      Entry: 7
+      Data: 3|ScaleToMouseScaler, Assembly-CSharp
+    - Name: meshMode
+      Entry: 3
+      Data: 0
+    - Name: canScale
+      Entry: 5
+      Data: true
+    - Name: useAngleMask
+      Entry: 5
+      Data: true
+    - Name: angleVar
+      Entry: 1
+      Data: areaAngle
+    - Name: areaSizeVar
+      Entry: 1
+      Data: dashArea
+    - Name: limitMaxRange
+      Entry: 5
+      Data: false
+    - Name: limitMinRange
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _variables
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+--- !u!4 &1856346405
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856346403}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1913951552
 GameObject:
   m_ObjectHideFlags: 0
@@ -2579,101 +2377,9 @@ MonoBehaviour:
     - Name: Material
       Entry: 10
       Data: 1
-    - Name: Variables
-      Entry: 7
-      Data: 2|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object,
-        mscorlib]], mscorlib
-    - Name: comparer
-      Entry: 7
-      Data: 3|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
-        mscorlib]], mscorlib
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 12
-      Data: 6
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: maxDistanceFromOrigin
-    - Name: $v
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: areaRadiusFloat
-    - Name: $v
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: areaWidth
-    - Name: $v
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: areaLength
-    - Name: $v
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: areaVec2
-    - Name: $v
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: areaVec3
-    - Name: $v
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
     - Name: positioner
       Entry: 7
-      Data: 4|FollowMousePositioner, Assembly-CSharp
+      Data: 2|FollowMousePositioner, Assembly-CSharp
     - Name: canRotate
       Entry: 5
       Data: true
@@ -2685,10 +2391,19 @@ MonoBehaviour:
       Data: 
     - Name: scaler
       Entry: 7
-      Data: 5|ScaleToArea, Assembly-CSharp
+      Data: 3|ScaleToArea, Assembly-CSharp
+    - Name: meshMode
+      Entry: 3
+      Data: 0
     - Name: canScale
       Entry: 5
       Data: true
+    - Name: useAngleMask
+      Entry: 5
+      Data: false
+    - Name: angleVar
+      Entry: 6
+      Data: 
     - Name: areaScaleMode
       Entry: 3
       Data: 1
@@ -2709,6 +2424,9 @@ MonoBehaviour:
       Data: areaLength
     - Name: 
       Entry: 8
+      Data: 
+    - Name: _variables
+      Entry: 6
       Data: 
     - Name: 
       Entry: 8
@@ -2825,6 +2543,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2091336233
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2091336234}
+  m_Layer: 0
+  m_Name: Kreg
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2091336234
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2091336233}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 441245021}
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2138096738
 GameObject:
   m_ObjectHideFlags: 0
@@ -2837,7 +2586,7 @@ GameObject:
   - component: {fileID: 2138096740}
   m_Layer: 0
   m_Name: Champion
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2870,3 +2619,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  ability: {fileID: 11400000, guid: b65848789473d884ca7d14b885530348, type: 2}

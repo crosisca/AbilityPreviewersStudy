@@ -2,8 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Ability
+[CreateAssetMenu(fileName = "AbilityConfig", menuName = "ScriptableObjects/AbilityConfig", order = 1)]
+public class Ability : ScriptableObject
 {
+    [SerializeField]
+    public readonly float[] RangePerLevel = { 5f, 10f, 15f, 20f };
+
+    public int level = 2;
+
+    public float Range => RangePerLevel[level - 1];
+
     public float DamageAreaRadius = 3;
 
     public bool Previewable = true;
@@ -25,7 +33,9 @@ public class Ability
 
     public float maxDistanceFromOrigin = 10;
 
-    public bool IsPreviewPositionValid(Vector3 position)
+    public float areaAngle = 45;
+
+    public bool IsPreviewPositionValid (Vector3 position)
     {
         return !Input.GetKey(KeyCode.LeftShift);
     }

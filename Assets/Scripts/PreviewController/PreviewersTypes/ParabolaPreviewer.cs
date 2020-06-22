@@ -18,7 +18,7 @@ public class ParabolaPreviewer : PreviewScaler
     public override void Initialize ()
     {
         base.Initialize();
-        trajectoryParabola = scalableQuad.gameObject.AddComponent<ParabolaMesh>();
+        trajectoryParabola = scalableMesh.gameObject.AddComponent<ParabolaMesh>();
         trajectoryParabola.Initialize(previewer.Champion, positioner.Target, gravity, angle, meshWidth, offset, previewConfig.Material, amountOfPoints);
     }
     
