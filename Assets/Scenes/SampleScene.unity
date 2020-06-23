@@ -212,7 +212,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 66679059}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &111375136
+--- !u!1 &163571319
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -220,129 +220,33 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 111375138}
-  - component: {fileID: 111375137}
+  - component: {fileID: 163571320}
   m_Layer: 0
-  m_Name: Previewer (4)
+  m_Name: Krub
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &111375137
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 111375136}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75dd4d5cfdc460545b5acffb427fc081, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects:
-    - {fileID: 2138096739}
-    - {fileID: 2100000, guid: 1af246a4eb52ed243a96a002599ed6b0, type: 2}
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: Champion
-      Entry: 10
-      Data: 0
-    - Name: PreviewConfigs
-      Entry: 7
-      Data: 0|System.Collections.Generic.List`1[[PreviewConfig, Assembly-CSharp]],
-        mscorlib
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 1|PreviewConfig, Assembly-CSharp
-    - Name: Material
-      Entry: 10
-      Data: 1
-    - Name: positioner
-      Entry: 7
-      Data: 2|FollowMousePositioner, Assembly-CSharp
-    - Name: canRotate
-      Entry: 5
-      Data: true
-    - Name: maxDistanceVar
-      Entry: 1
-      Data: maxDistanceFromOrigin
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: scaler
-      Entry: 7
-      Data: 3|ScaleToArea, Assembly-CSharp
-    - Name: meshMode
-      Entry: 3
-      Data: 1
-    - Name: canScale
-      Entry: 5
-      Data: true
-    - Name: useAngleMask
-      Entry: 5
-      Data: true
-    - Name: angleVar
-      Entry: 1
-      Data: areaAngle
-    - Name: areaScaleMode
-      Entry: 3
-      Data: 0
-    - Name: radiusVar
-      Entry: 1
-      Data: areaRadiusFloat
-    - Name: areaInVector3Var
-      Entry: 6
-      Data: 
-    - Name: areaInVector2Var
-      Entry: 6
-      Data: 
-    - Name: areaWidthVar
-      Entry: 6
-      Data: 
-    - Name: areaLengthVar
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: _variables
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
---- !u!4 &111375138
+--- !u!4 &163571320
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 111375136}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_GameObject: {fileID: 163571319}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 487124319}
+  - {fileID: 1037429041}
+  - {fileID: 1611787825}
+  - {fileID: 1840036245}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &214296931
+--- !u!1 &332587484
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -350,22 +254,36 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 214296933}
-  - component: {fileID: 214296932}
+  - component: {fileID: 332587485}
+  - component: {fileID: 332587486}
   m_Layer: 0
-  m_Name: Previewer (2)
+  m_Name: SulaF
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &214296932
+--- !u!4 &332587485
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 332587484}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2093100712}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &332587486
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 214296931}
+  m_GameObject: {fileID: 332587484}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 75dd4d5cfdc460545b5acffb427fc081, type: 3}
@@ -375,39 +293,52 @@ MonoBehaviour:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 2138096739}
     - {fileID: 2100000, guid: fc575301c84ddde4092013dc17211498, type: 2}
-    - {fileID: 2100000, guid: e255c59c4527eb34992adb543541da63, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes:
     - Name: Champion
-      Entry: 10
-      Data: 0
+      Entry: 6
+      Data: 
     - Name: PreviewConfigs
       Entry: 7
       Data: 0|System.Collections.Generic.List`1[[PreviewConfig, Assembly-CSharp]],
         mscorlib
     - Name: 
       Entry: 12
-      Data: 2
+      Data: 1
     - Name: 
       Entry: 7
       Data: 1|PreviewConfig, Assembly-CSharp
     - Name: Material
       Entry: 10
-      Data: 1
+      Data: 0
     - Name: positioner
       Entry: 7
       Data: 2|FollowMousePositioner, Assembly-CSharp
     - Name: canRotate
       Entry: 5
       Data: false
+    - Name: useMaxRange
+      Entry: 5
+      Data: false
+    - Name: maxDistanceType
+      Entry: 3
+      Data: 0
     - Name: maxDistanceVar
       Entry: 1
       Data: maxDistanceFromOrigin
+    - Name: useMinRange
+      Entry: 5
+      Data: false
+    - Name: minDistanceType
+      Entry: 3
+      Data: 0
+    - Name: minDistanceVar
+      Entry: 6
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -416,6 +347,12 @@ MonoBehaviour:
       Data: 3|ScaleToArea, Assembly-CSharp
     - Name: meshMode
       Entry: 3
+      Data: 0
+    - Name: CustomMesh
+      Entry: 6
+      Data: 
+    - Name: Material
+      Entry: 10
       Data: 0
     - Name: canScale
       Entry: 5
@@ -431,7 +368,7 @@ MonoBehaviour:
       Data: 0
     - Name: radiusVar
       Entry: 1
-      Data: DamageAreaRadius
+      Data: radius2
     - Name: areaInVector3Var
       Entry: 6
       Data: 
@@ -444,54 +381,9 @@ MonoBehaviour:
     - Name: areaLengthVar
       Entry: 6
       Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: _variables
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 4|PreviewConfig, Assembly-CSharp
-    - Name: Material
-      Entry: 10
-      Data: 2
-    - Name: positioner
-      Entry: 7
-      Data: 5|AimToMousePositioner, Assembly-CSharp
-    - Name: maxDistanceVar
-      Entry: 1
-      Data: maxDistanceFromOrigin
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: scaler
-      Entry: 7
-      Data: 6|ScaleToMouseScaler, Assembly-CSharp
-    - Name: meshMode
+    - Name: pivot
       Entry: 3
       Data: 0
-    - Name: canScale
-      Entry: 5
-      Data: true
-    - Name: useAngleMask
-      Entry: 5
-      Data: false
-    - Name: angleVar
-      Entry: 6
-      Data: 
-    - Name: areaSizeVar
-      Entry: 1
-      Data: dashArea
-    - Name: limitMaxRange
-      Entry: 5
-      Data: false
-    - Name: limitMinRange
-      Entry: 5
-      Data: false
     - Name: 
       Entry: 8
       Data: 
@@ -507,21 +399,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
---- !u!4 &214296933
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 214296931}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &261834919
+--- !u!1 &401391398
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -529,22 +407,36 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 261834921}
-  - component: {fileID: 261834920}
+  - component: {fileID: 401391399}
+  - component: {fileID: 401391400}
   m_Layer: 0
-  m_Name: PreviewerScaleVector3
+  m_Name: HulgurQ_fire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &261834920
+--- !u!4 &401391399
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 401391398}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1741704300}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &401391400
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 261834919}
+  m_GameObject: {fileID: 401391398}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 75dd4d5cfdc460545b5acffb427fc081, type: 3}
@@ -554,16 +446,15 @@ MonoBehaviour:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 2138096739}
-    - {fileID: 2100000, guid: b1574ef18d899b64a8232a7e70ea3ac6, type: 2}
+    - {fileID: 2100000, guid: 48c7eaf9af43bcd4fb682d27d4445143, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes:
     - Name: Champion
-      Entry: 10
-      Data: 0
+      Entry: 6
+      Data: 
     - Name: PreviewConfigs
       Entry: 7
       Data: 0|System.Collections.Generic.List`1[[PreviewConfig, Assembly-CSharp]],
@@ -576,16 +467,19 @@ MonoBehaviour:
       Data: 1|PreviewConfig, Assembly-CSharp
     - Name: Material
       Entry: 10
-      Data: 1
+      Data: 0
     - Name: positioner
       Entry: 7
-      Data: 2|FollowMousePositioner, Assembly-CSharp
-    - Name: canRotate
+      Data: 2|AimToMousePositioner, Assembly-CSharp
+    - Name: useOffset
       Entry: 5
-      Data: true
-    - Name: maxDistanceVar
-      Entry: 1
-      Data: maxDistanceFromOrigin
+      Data: false
+    - Name: offsetVarType
+      Entry: 3
+      Data: 0
+    - Name: offsetVar
+      Entry: 6
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -594,6 +488,12 @@ MonoBehaviour:
       Data: 3|ScaleToArea, Assembly-CSharp
     - Name: meshMode
       Entry: 3
+      Data: 0
+    - Name: CustomMesh
+      Entry: 6
+      Data: 
+    - Name: Material
+      Entry: 10
       Data: 0
     - Name: canScale
       Entry: 5
@@ -606,22 +506,25 @@ MonoBehaviour:
       Data: 
     - Name: areaScaleMode
       Entry: 3
-      Data: 3
+      Data: 0
     - Name: radiusVar
       Entry: 1
-      Data: areaRadiusFloat
+      Data: radius5
     - Name: areaInVector3Var
-      Entry: 1
-      Data: areaVec3
+      Entry: 6
+      Data: 
     - Name: areaInVector2Var
-      Entry: 1
-      Data: areaVec2
+      Entry: 6
+      Data: 
     - Name: areaWidthVar
-      Entry: 1
-      Data: areaWidth
+      Entry: 6
+      Data: 
     - Name: areaLengthVar
-      Entry: 1
-      Data: areaLength
+      Entry: 6
+      Data: 
+    - Name: pivot
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -637,20 +540,6 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
---- !u!4 &261834921
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 261834919}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1, y: 0, z: 6}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &441245020
 GameObject:
   m_ObjectHideFlags: 0
@@ -726,9 +615,24 @@ MonoBehaviour:
     - Name: canRotate
       Entry: 5
       Data: true
+    - Name: useMaxRange
+      Entry: 5
+      Data: true
+    - Name: maxDistanceType
+      Entry: 3
+      Data: 0
     - Name: maxDistanceVar
       Entry: 1
       Data: maxDistanceFromOrigin
+    - Name: useMinRange
+      Entry: 5
+      Data: false
+    - Name: minDistanceType
+      Entry: 3
+      Data: 0
+    - Name: minDistanceVar
+      Entry: 6
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -737,6 +641,12 @@ MonoBehaviour:
       Data: 3|ScaleToArea, Assembly-CSharp
     - Name: meshMode
       Entry: 3
+      Data: 0
+    - Name: CustomMesh
+      Entry: 6
+      Data: 
+    - Name: Material
+      Entry: 10
       Data: 0
     - Name: canScale
       Entry: 5
@@ -765,6 +675,9 @@ MonoBehaviour:
     - Name: areaLengthVar
       Entry: 6
       Data: 
+    - Name: pivot
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -780,7 +693,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
---- !u!1 &683151597
+--- !u!1 &482649591
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -788,91 +701,1149 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 683151598}
-  - component: {fileID: 683151601}
-  - component: {fileID: 683151600}
-  - component: {fileID: 683151599}
+  - component: {fileID: 482649592}
+  - component: {fileID: 482649593}
   m_Layer: 0
-  m_Name: Body
+  m_Name: SagharoE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &683151598
+  m_IsActive: 0
+--- !u!4 &482649592
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 683151597}
+  m_GameObject: {fileID: 482649591}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1610164438}
-  m_Father: {fileID: 1217622392}
+  m_Children: []
+  m_Father: {fileID: 766101845}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &482649593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 482649591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75dd4d5cfdc460545b5acffb427fc081, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 2100000, guid: fc575301c84ddde4092013dc17211498, type: 2}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Champion
+      Entry: 6
+      Data: 
+    - Name: PreviewConfigs
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[PreviewConfig, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|PreviewConfig, Assembly-CSharp
+    - Name: Material
+      Entry: 10
+      Data: 0
+    - Name: positioner
+      Entry: 7
+      Data: 2|AimToMousePositioner, Assembly-CSharp
+    - Name: useOffset
+      Entry: 5
+      Data: false
+    - Name: offsetVarType
+      Entry: 3
+      Data: 2
+    - Name: offsetVar
+      Entry: 1
+      Data: forward3
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: scaler
+      Entry: 7
+      Data: 3|ScaleToArea, Assembly-CSharp
+    - Name: meshMode
+      Entry: 3
+      Data: 0
+    - Name: CustomMesh
+      Entry: 6
+      Data: 
+    - Name: Material
+      Entry: 10
+      Data: 0
+    - Name: canScale
+      Entry: 5
+      Data: true
+    - Name: useAngleMask
+      Entry: 5
+      Data: false
+    - Name: angleVar
+      Entry: 6
+      Data: 
+    - Name: areaScaleMode
+      Entry: 3
+      Data: 0
+    - Name: radiusVar
+      Entry: 1
+      Data: areaRadiusFloat
+    - Name: areaInVector3Var
+      Entry: 6
+      Data: 
+    - Name: areaInVector2Var
+      Entry: 6
+      Data: 
+    - Name: areaWidthVar
+      Entry: 6
+      Data: 
+    - Name: areaLengthVar
+      Entry: 6
+      Data: 
+    - Name: pivot
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _variables
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+--- !u!1 &487124318
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 487124319}
+  - component: {fileID: 487124320}
+  m_Layer: 0
+  m_Name: KrubQ
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &487124319
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487124318}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 163571320}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &683151599
-CapsuleCollider:
+--- !u!114 &487124320
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 683151597}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_GameObject: {fileID: 487124318}
   m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &683151600
-MeshRenderer:
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75dd4d5cfdc460545b5acffb427fc081, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 2100000, guid: b1574ef18d899b64a8232a7e70ea3ac6, type: 2}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Champion
+      Entry: 6
+      Data: 
+    - Name: PreviewConfigs
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[PreviewConfig, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|PreviewConfig, Assembly-CSharp
+    - Name: Material
+      Entry: 10
+      Data: 0
+    - Name: positioner
+      Entry: 7
+      Data: 2|AimToMousePositioner, Assembly-CSharp
+    - Name: useOffset
+      Entry: 5
+      Data: false
+    - Name: offsetVarType
+      Entry: 3
+      Data: 0
+    - Name: offsetVar
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: scaler
+      Entry: 7
+      Data: 3|ScaleToMouseScaler, Assembly-CSharp
+    - Name: meshMode
+      Entry: 3
+      Data: 0
+    - Name: CustomMesh
+      Entry: 6
+      Data: 
+    - Name: Material
+      Entry: 10
+      Data: 0
+    - Name: canScale
+      Entry: 5
+      Data: true
+    - Name: useAngleMask
+      Entry: 5
+      Data: false
+    - Name: angleVar
+      Entry: 6
+      Data: 
+    - Name: areaSizeVar
+      Entry: 1
+      Data: dashArea
+    - Name: limitMaxRange
+      Entry: 5
+      Data: true
+    - Name: limitMinRange
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _variables
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+--- !u!1 &533852135
+GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 683151597}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 533852136}
+  - component: {fileID: 533852137}
+  m_Layer: 0
+  m_Name: KregE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &533852136
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533852135}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2091336234}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &533852137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533852135}
   m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: f820c1f50f41728478662c5a8a192841, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &683151601
-MeshFilter:
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75dd4d5cfdc460545b5acffb427fc081, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 2100000, guid: fc575301c84ddde4092013dc17211498, type: 2}
+    - {fileID: 2100000, guid: 652107f36a28e44479c0b827dee5852a, type: 2}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Champion
+      Entry: 6
+      Data: 
+    - Name: PreviewConfigs
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[PreviewConfig, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 1|PreviewConfig, Assembly-CSharp
+    - Name: Material
+      Entry: 10
+      Data: 0
+    - Name: positioner
+      Entry: 7
+      Data: 2|FollowMousePositioner, Assembly-CSharp
+    - Name: canRotate
+      Entry: 5
+      Data: true
+    - Name: useMaxRange
+      Entry: 5
+      Data: true
+    - Name: maxDistanceType
+      Entry: 3
+      Data: 0
+    - Name: maxDistanceVar
+      Entry: 1
+      Data: maxDistanceFromOrigin
+    - Name: useMinRange
+      Entry: 5
+      Data: false
+    - Name: minDistanceType
+      Entry: 3
+      Data: 0
+    - Name: minDistanceVar
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: scaler
+      Entry: 7
+      Data: 3|ScaleToArea, Assembly-CSharp
+    - Name: meshMode
+      Entry: 3
+      Data: 0
+    - Name: CustomMesh
+      Entry: 6
+      Data: 
+    - Name: Material
+      Entry: 10
+      Data: 0
+    - Name: canScale
+      Entry: 5
+      Data: true
+    - Name: useAngleMask
+      Entry: 5
+      Data: false
+    - Name: angleVar
+      Entry: 6
+      Data: 
+    - Name: areaScaleMode
+      Entry: 3
+      Data: 0
+    - Name: radiusVar
+      Entry: 1
+      Data: Range
+    - Name: areaInVector3Var
+      Entry: 6
+      Data: 
+    - Name: areaInVector2Var
+      Entry: 6
+      Data: 
+    - Name: areaWidthVar
+      Entry: 6
+      Data: 
+    - Name: areaLengthVar
+      Entry: 6
+      Data: 
+    - Name: pivot
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _variables
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 4|PreviewConfig, Assembly-CSharp
+    - Name: Material
+      Entry: 10
+      Data: 1
+    - Name: positioner
+      Entry: 7
+      Data: 5|AimToMousePositioner, Assembly-CSharp
+    - Name: useOffset
+      Entry: 5
+      Data: false
+    - Name: offsetVarType
+      Entry: 3
+      Data: 0
+    - Name: offsetVar
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: scaler
+      Entry: 7
+      Data: 6|ParabolaScaler, Assembly-CSharp
+    - Name: meshMode
+      Entry: 3
+      Data: 0
+    - Name: CustomMesh
+      Entry: 6
+      Data: 
+    - Name: Material
+      Entry: 10
+      Data: 1
+    - Name: canScale
+      Entry: 5
+      Data: true
+    - Name: useAngleMask
+      Entry: 5
+      Data: false
+    - Name: angleVar
+      Entry: 6
+      Data: 
+    - Name: gravity
+      Entry: 4
+      Data: 60
+    - Name: angle
+      Entry: 4
+      Data: 45
+    - Name: meshWidth
+      Entry: 4
+      Data: 0.2
+    - Name: offset
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 1.6
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: amountOfPoints
+      Entry: 3
+      Data: 40
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _variables
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+--- !u!1 &556331040
+GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 683151597}
-  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 556331041}
+  - component: {fileID: 556331042}
+  m_Layer: 0
+  m_Name: EgonQ
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &556331041
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556331040}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.0681624, y: 0.103839874, z: 0.2779789}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1383463625}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &556331042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556331040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75dd4d5cfdc460545b5acffb427fc081, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 2100000, guid: b1574ef18d899b64a8232a7e70ea3ac6, type: 2}
+    - {fileID: 2100000, guid: fc575301c84ddde4092013dc17211498, type: 2}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Champion
+      Entry: 6
+      Data: 
+    - Name: PreviewConfigs
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[PreviewConfig, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 1|PreviewConfig, Assembly-CSharp
+    - Name: Material
+      Entry: 10
+      Data: 0
+    - Name: positioner
+      Entry: 7
+      Data: 2|AimToMousePositioner, Assembly-CSharp
+    - Name: useOffset
+      Entry: 5
+      Data: false
+    - Name: offsetVarType
+      Entry: 3
+      Data: 0
+    - Name: offsetVar
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: scaler
+      Entry: 7
+      Data: 3|ScaleToMouseScaler, Assembly-CSharp
+    - Name: meshMode
+      Entry: 3
+      Data: 0
+    - Name: CustomMesh
+      Entry: 6
+      Data: 
+    - Name: Material
+      Entry: 10
+      Data: 0
+    - Name: canScale
+      Entry: 5
+      Data: true
+    - Name: useAngleMask
+      Entry: 5
+      Data: false
+    - Name: angleVar
+      Entry: 6
+      Data: 
+    - Name: areaSizeVar
+      Entry: 1
+      Data: dashArea
+    - Name: limitMaxRange
+      Entry: 5
+      Data: true
+    - Name: limitMinRange
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _variables
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 4|PreviewConfig, Assembly-CSharp
+    - Name: Material
+      Entry: 10
+      Data: 1
+    - Name: positioner
+      Entry: 7
+      Data: 5|FollowMousePositioner, Assembly-CSharp
+    - Name: canRotate
+      Entry: 5
+      Data: true
+    - Name: useMaxRange
+      Entry: 5
+      Data: true
+    - Name: maxDistanceType
+      Entry: 3
+      Data: 2
+    - Name: maxDistanceVar
+      Entry: 1
+      Data: dashArea
+    - Name: useMinRange
+      Entry: 5
+      Data: false
+    - Name: minDistanceType
+      Entry: 3
+      Data: 0
+    - Name: minDistanceVar
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: scaler
+      Entry: 7
+      Data: 6|ScaleToArea, Assembly-CSharp
+    - Name: meshMode
+      Entry: 3
+      Data: 0
+    - Name: CustomMesh
+      Entry: 6
+      Data: 
+    - Name: Material
+      Entry: 10
+      Data: 1
+    - Name: canScale
+      Entry: 5
+      Data: true
+    - Name: useAngleMask
+      Entry: 5
+      Data: false
+    - Name: angleVar
+      Entry: 6
+      Data: 
+    - Name: areaScaleMode
+      Entry: 3
+      Data: 0
+    - Name: radiusVar
+      Entry: 1
+      Data: areaRadiusFloat
+    - Name: areaInVector3Var
+      Entry: 6
+      Data: 
+    - Name: areaInVector2Var
+      Entry: 6
+      Data: 
+    - Name: areaWidthVar
+      Entry: 6
+      Data: 
+    - Name: areaLengthVar
+      Entry: 6
+      Data: 
+    - Name: pivot
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _variables
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+--- !u!1 &610418989
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 610418990}
+  - component: {fileID: 610418991}
+  m_Layer: 0
+  m_Name: SagharoR
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &610418990
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 610418989}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 766101845}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &610418991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 610418989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75dd4d5cfdc460545b5acffb427fc081, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 2100000, guid: fc575301c84ddde4092013dc17211498, type: 2}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Champion
+      Entry: 6
+      Data: 
+    - Name: PreviewConfigs
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[PreviewConfig, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|PreviewConfig, Assembly-CSharp
+    - Name: Material
+      Entry: 10
+      Data: 0
+    - Name: positioner
+      Entry: 7
+      Data: 2|AimToMousePositioner, Assembly-CSharp
+    - Name: useOffset
+      Entry: 5
+      Data: false
+    - Name: offsetVarType
+      Entry: 3
+      Data: 2
+    - Name: offsetVar
+      Entry: 1
+      Data: forward3
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: scaler
+      Entry: 7
+      Data: 3|ScaleToArea, Assembly-CSharp
+    - Name: meshMode
+      Entry: 3
+      Data: 0
+    - Name: CustomMesh
+      Entry: 6
+      Data: 
+    - Name: Material
+      Entry: 10
+      Data: 0
+    - Name: canScale
+      Entry: 5
+      Data: true
+    - Name: useAngleMask
+      Entry: 5
+      Data: false
+    - Name: angleVar
+      Entry: 6
+      Data: 
+    - Name: areaScaleMode
+      Entry: 3
+      Data: 0
+    - Name: radiusVar
+      Entry: 1
+      Data: areaRadiusFloat
+    - Name: areaInVector3Var
+      Entry: 6
+      Data: 
+    - Name: areaInVector2Var
+      Entry: 6
+      Data: 
+    - Name: areaWidthVar
+      Entry: 6
+      Data: 
+    - Name: areaLengthVar
+      Entry: 6
+      Data: 
+    - Name: pivot
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _variables
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+--- !u!1 &672696104
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 672696105}
+  - component: {fileID: 672696106}
+  m_Layer: 0
+  m_Name: HulgurF
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &672696105
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 672696104}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1741704300}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &672696106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 672696104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75dd4d5cfdc460545b5acffb427fc081, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 2100000, guid: fc575301c84ddde4092013dc17211498, type: 2}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Champion
+      Entry: 6
+      Data: 
+    - Name: PreviewConfigs
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[PreviewConfig, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|PreviewConfig, Assembly-CSharp
+    - Name: Material
+      Entry: 10
+      Data: 0
+    - Name: positioner
+      Entry: 7
+      Data: 2|FollowMousePositioner, Assembly-CSharp
+    - Name: canRotate
+      Entry: 5
+      Data: false
+    - Name: useMaxRange
+      Entry: 5
+      Data: false
+    - Name: maxDistanceType
+      Entry: 3
+      Data: 0
+    - Name: maxDistanceVar
+      Entry: 1
+      Data: maxDistanceFromOrigin
+    - Name: useMinRange
+      Entry: 5
+      Data: false
+    - Name: minDistanceType
+      Entry: 3
+      Data: 0
+    - Name: minDistanceVar
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: scaler
+      Entry: 7
+      Data: 3|ScaleToArea, Assembly-CSharp
+    - Name: meshMode
+      Entry: 3
+      Data: 0
+    - Name: CustomMesh
+      Entry: 6
+      Data: 
+    - Name: Material
+      Entry: 10
+      Data: 0
+    - Name: canScale
+      Entry: 5
+      Data: true
+    - Name: useAngleMask
+      Entry: 5
+      Data: false
+    - Name: angleVar
+      Entry: 6
+      Data: 
+    - Name: areaScaleMode
+      Entry: 3
+      Data: 0
+    - Name: radiusVar
+      Entry: 1
+      Data: Range
+    - Name: areaInVector3Var
+      Entry: 6
+      Data: 
+    - Name: areaInVector2Var
+      Entry: 6
+      Data: 
+    - Name: areaWidthVar
+      Entry: 6
+      Data: 
+    - Name: areaLengthVar
+      Entry: 6
+      Data: 
+    - Name: pivot
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _variables
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+--- !u!1 &674102085
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 674102086}
+  - component: {fileID: 674102087}
+  m_Layer: 0
+  m_Name: SulaR
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &674102086
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674102085}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2093100712}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &674102087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674102085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75dd4d5cfdc460545b5acffb427fc081, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 2100000, guid: e255c59c4527eb34992adb543541da63, type: 2}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Champion
+      Entry: 6
+      Data: 
+    - Name: PreviewConfigs
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[PreviewConfig, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|PreviewConfig, Assembly-CSharp
+    - Name: Material
+      Entry: 10
+      Data: 0
+    - Name: positioner
+      Entry: 7
+      Data: 2|AimToMousePositioner, Assembly-CSharp
+    - Name: useOffset
+      Entry: 5
+      Data: false
+    - Name: offsetVarType
+      Entry: 3
+      Data: 0
+    - Name: offsetVar
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: scaler
+      Entry: 7
+      Data: 3|ScaleToArea, Assembly-CSharp
+    - Name: meshMode
+      Entry: 3
+      Data: 0
+    - Name: CustomMesh
+      Entry: 6
+      Data: 
+    - Name: Material
+      Entry: 10
+      Data: 0
+    - Name: canScale
+      Entry: 5
+      Data: true
+    - Name: useAngleMask
+      Entry: 5
+      Data: false
+    - Name: angleVar
+      Entry: 6
+      Data: 
+    - Name: areaScaleMode
+      Entry: 3
+      Data: 3
+    - Name: radiusVar
+      Entry: 1
+      Data: radius4
+    - Name: areaInVector3Var
+      Entry: 1
+      Data: areaVec3
+    - Name: areaInVector2Var
+      Entry: 6
+      Data: 
+    - Name: areaWidthVar
+      Entry: 6
+      Data: 
+    - Name: areaLengthVar
+      Entry: 6
+      Data: 
+    - Name: pivot
+      Entry: 3
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _variables
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -964,6 +1935,521 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &751301272
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 751301273}
+  m_Layer: 0
+  m_Name: Groma
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &751301273
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 751301272}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1046220531}
+  - {fileID: 773993819}
+  - {fileID: 808235576}
+  - {fileID: 1382953931}
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &766101844
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 766101845}
+  m_Layer: 0
+  m_Name: Sagharo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &766101845
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766101844}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2074232163}
+  - {fileID: 482649592}
+  - {fileID: 857430441}
+  - {fileID: 610418990}
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &773993818
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 773993819}
+  - component: {fileID: 773993820}
+  m_Layer: 0
+  m_Name: GromaE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &773993819
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 773993818}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 751301273}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &773993820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 773993818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75dd4d5cfdc460545b5acffb427fc081, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 2100000, guid: fc575301c84ddde4092013dc17211498, type: 2}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Champion
+      Entry: 6
+      Data: 
+    - Name: PreviewConfigs
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[PreviewConfig, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|PreviewConfig, Assembly-CSharp
+    - Name: Material
+      Entry: 10
+      Data: 0
+    - Name: positioner
+      Entry: 7
+      Data: 2|AimToMousePositioner, Assembly-CSharp
+    - Name: useOffset
+      Entry: 5
+      Data: true
+    - Name: offsetVarType
+      Entry: 3
+      Data: 2
+    - Name: offsetVar
+      Entry: 1
+      Data: forward3
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: scaler
+      Entry: 7
+      Data: 3|ScaleToArea, Assembly-CSharp
+    - Name: meshMode
+      Entry: 3
+      Data: 0
+    - Name: CustomMesh
+      Entry: 6
+      Data: 
+    - Name: Material
+      Entry: 10
+      Data: 0
+    - Name: canScale
+      Entry: 5
+      Data: true
+    - Name: useAngleMask
+      Entry: 5
+      Data: false
+    - Name: angleVar
+      Entry: 6
+      Data: 
+    - Name: areaScaleMode
+      Entry: 3
+      Data: 0
+    - Name: radiusVar
+      Entry: 1
+      Data: areaRadiusFloat
+    - Name: areaInVector3Var
+      Entry: 6
+      Data: 
+    - Name: areaInVector2Var
+      Entry: 6
+      Data: 
+    - Name: areaWidthVar
+      Entry: 6
+      Data: 
+    - Name: areaLengthVar
+      Entry: 6
+      Data: 
+    - Name: pivot
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _variables
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+--- !u!1 &808235575
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 808235576}
+  - component: {fileID: 808235577}
+  m_Layer: 0
+  m_Name: GromaF
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &808235576
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 808235575}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 751301273}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &808235577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 808235575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75dd4d5cfdc460545b5acffb427fc081, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 2100000, guid: fc575301c84ddde4092013dc17211498, type: 2}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Champion
+      Entry: 6
+      Data: 
+    - Name: PreviewConfigs
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[PreviewConfig, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|PreviewConfig, Assembly-CSharp
+    - Name: Material
+      Entry: 10
+      Data: 0
+    - Name: positioner
+      Entry: 7
+      Data: 2|FollowMousePositioner, Assembly-CSharp
+    - Name: canRotate
+      Entry: 5
+      Data: false
+    - Name: useMaxRange
+      Entry: 5
+      Data: false
+    - Name: maxDistanceType
+      Entry: 3
+      Data: 0
+    - Name: maxDistanceVar
+      Entry: 1
+      Data: maxDistanceFromOrigin
+    - Name: useMinRange
+      Entry: 5
+      Data: false
+    - Name: minDistanceType
+      Entry: 3
+      Data: 0
+    - Name: minDistanceVar
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: scaler
+      Entry: 7
+      Data: 3|ScaleToArea, Assembly-CSharp
+    - Name: meshMode
+      Entry: 3
+      Data: 0
+    - Name: CustomMesh
+      Entry: 6
+      Data: 
+    - Name: Material
+      Entry: 10
+      Data: 0
+    - Name: canScale
+      Entry: 5
+      Data: true
+    - Name: useAngleMask
+      Entry: 5
+      Data: false
+    - Name: angleVar
+      Entry: 6
+      Data: 
+    - Name: areaScaleMode
+      Entry: 3
+      Data: 0
+    - Name: radiusVar
+      Entry: 1
+      Data: Range
+    - Name: areaInVector3Var
+      Entry: 6
+      Data: 
+    - Name: areaInVector2Var
+      Entry: 6
+      Data: 
+    - Name: areaWidthVar
+      Entry: 6
+      Data: 
+    - Name: areaLengthVar
+      Entry: 6
+      Data: 
+    - Name: pivot
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _variables
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+--- !u!1 &857430440
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 857430441}
+  - component: {fileID: 857430442}
+  m_Layer: 0
+  m_Name: SagharoF
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &857430441
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 857430440}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 766101845}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &857430442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 857430440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75dd4d5cfdc460545b5acffb427fc081, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 2100000, guid: fc575301c84ddde4092013dc17211498, type: 2}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Champion
+      Entry: 6
+      Data: 
+    - Name: PreviewConfigs
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[PreviewConfig, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|PreviewConfig, Assembly-CSharp
+    - Name: Material
+      Entry: 10
+      Data: 0
+    - Name: positioner
+      Entry: 7
+      Data: 2|FollowMousePositioner, Assembly-CSharp
+    - Name: canRotate
+      Entry: 5
+      Data: false
+    - Name: useMaxRange
+      Entry: 5
+      Data: false
+    - Name: maxDistanceType
+      Entry: 3
+      Data: 0
+    - Name: maxDistanceVar
+      Entry: 1
+      Data: maxDistanceFromOrigin
+    - Name: useMinRange
+      Entry: 5
+      Data: false
+    - Name: minDistanceType
+      Entry: 3
+      Data: 0
+    - Name: minDistanceVar
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: scaler
+      Entry: 7
+      Data: 3|ScaleToArea, Assembly-CSharp
+    - Name: meshMode
+      Entry: 3
+      Data: 0
+    - Name: CustomMesh
+      Entry: 6
+      Data: 
+    - Name: Material
+      Entry: 10
+      Data: 0
+    - Name: canScale
+      Entry: 5
+      Data: true
+    - Name: useAngleMask
+      Entry: 5
+      Data: false
+    - Name: angleVar
+      Entry: 6
+      Data: 
+    - Name: areaScaleMode
+      Entry: 3
+      Data: 0
+    - Name: radiusVar
+      Entry: 1
+      Data: Range
+    - Name: areaInVector3Var
+      Entry: 6
+      Data: 
+    - Name: areaInVector2Var
+      Entry: 6
+      Data: 
+    - Name: areaWidthVar
+      Entry: 6
+      Data: 
+    - Name: areaLengthVar
+      Entry: 6
+      Data: 
+    - Name: pivot
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _variables
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1047,7 +2533,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 45.000004, y: 0, z: 0}
---- !u!1 &1023338157
+--- !u!1 &1037429040
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1055,22 +2541,36 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1023338159}
-  - component: {fileID: 1023338158}
+  - component: {fileID: 1037429041}
+  - component: {fileID: 1037429042}
   m_Layer: 0
-  m_Name: PreviewerScaleVector3 (2)
+  m_Name: KrubE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &1023338158
+--- !u!4 &1037429041
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1037429040}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 163571320}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1037429042
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1023338157}
+  m_GameObject: {fileID: 1037429040}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 75dd4d5cfdc460545b5acffb427fc081, type: 3}
@@ -1080,16 +2580,15 @@ MonoBehaviour:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 2138096739}
-    - {fileID: 2100000, guid: b1574ef18d899b64a8232a7e70ea3ac6, type: 2}
+    - {fileID: 2100000, guid: fc575301c84ddde4092013dc17211498, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes:
     - Name: Champion
-      Entry: 10
-      Data: 0
+      Entry: 6
+      Data: 
     - Name: PreviewConfigs
       Entry: 7
       Data: 0|System.Collections.Generic.List`1[[PreviewConfig, Assembly-CSharp]],
@@ -1102,22 +2601,272 @@ MonoBehaviour:
       Data: 1|PreviewConfig, Assembly-CSharp
     - Name: Material
       Entry: 10
-      Data: 1
+      Data: 0
     - Name: positioner
       Entry: 7
       Data: 2|AimToMousePositioner, Assembly-CSharp
-    - Name: maxDistanceVar
-      Entry: 1
-      Data: maxDistanceFromOrigin
+    - Name: useOffset
+      Entry: 5
+      Data: false
+    - Name: offsetVarType
+      Entry: 3
+      Data: 0
+    - Name: offsetVar
+      Entry: 6
+      Data: 
     - Name: 
       Entry: 8
       Data: 
     - Name: scaler
       Entry: 7
-      Data: 3|ParabolaPreviewer, Assembly-CSharp
+      Data: 3|ScaleToArea, Assembly-CSharp
     - Name: meshMode
       Entry: 3
       Data: 0
+    - Name: CustomMesh
+      Entry: 6
+      Data: 
+    - Name: Material
+      Entry: 10
+      Data: 0
+    - Name: canScale
+      Entry: 5
+      Data: true
+    - Name: useAngleMask
+      Entry: 5
+      Data: false
+    - Name: angleVar
+      Entry: 6
+      Data: 
+    - Name: areaScaleMode
+      Entry: 3
+      Data: 0
+    - Name: radiusVar
+      Entry: 1
+      Data: radius4
+    - Name: areaInVector3Var
+      Entry: 6
+      Data: 
+    - Name: areaInVector2Var
+      Entry: 6
+      Data: 
+    - Name: areaWidthVar
+      Entry: 6
+      Data: 
+    - Name: areaLengthVar
+      Entry: 6
+      Data: 
+    - Name: pivot
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _variables
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+--- !u!1 &1046220530
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1046220531}
+  - component: {fileID: 1046220532}
+  m_Layer: 0
+  m_Name: GromaQ
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1046220531
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1046220530}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 751301273}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1046220532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1046220530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75dd4d5cfdc460545b5acffb427fc081, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 2100000, guid: fc575301c84ddde4092013dc17211498, type: 2}
+    - {fileID: 2100000, guid: 652107f36a28e44479c0b827dee5852a, type: 2}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Champion
+      Entry: 6
+      Data: 
+    - Name: PreviewConfigs
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[PreviewConfig, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 1|PreviewConfig, Assembly-CSharp
+    - Name: Material
+      Entry: 10
+      Data: 0
+    - Name: positioner
+      Entry: 7
+      Data: 2|FollowMousePositioner, Assembly-CSharp
+    - Name: canRotate
+      Entry: 5
+      Data: true
+    - Name: useMaxRange
+      Entry: 5
+      Data: true
+    - Name: maxDistanceType
+      Entry: 3
+      Data: 0
+    - Name: maxDistanceVar
+      Entry: 1
+      Data: maxDistanceFromOrigin
+    - Name: useMinRange
+      Entry: 5
+      Data: false
+    - Name: minDistanceType
+      Entry: 3
+      Data: 0
+    - Name: minDistanceVar
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: scaler
+      Entry: 7
+      Data: 3|ScaleToArea, Assembly-CSharp
+    - Name: meshMode
+      Entry: 3
+      Data: 0
+    - Name: CustomMesh
+      Entry: 6
+      Data: 
+    - Name: Material
+      Entry: 10
+      Data: 0
+    - Name: canScale
+      Entry: 5
+      Data: true
+    - Name: useAngleMask
+      Entry: 5
+      Data: false
+    - Name: angleVar
+      Entry: 6
+      Data: 
+    - Name: areaScaleMode
+      Entry: 3
+      Data: 0
+    - Name: radiusVar
+      Entry: 1
+      Data: Range
+    - Name: areaInVector3Var
+      Entry: 6
+      Data: 
+    - Name: areaInVector2Var
+      Entry: 6
+      Data: 
+    - Name: areaWidthVar
+      Entry: 6
+      Data: 
+    - Name: areaLengthVar
+      Entry: 6
+      Data: 
+    - Name: pivot
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _variables
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 4|PreviewConfig, Assembly-CSharp
+    - Name: Material
+      Entry: 10
+      Data: 1
+    - Name: positioner
+      Entry: 7
+      Data: 5|FollowMousePositioner, Assembly-CSharp
+    - Name: canRotate
+      Entry: 5
+      Data: true
+    - Name: useMaxRange
+      Entry: 5
+      Data: true
+    - Name: maxDistanceType
+      Entry: 3
+      Data: 0
+    - Name: maxDistanceVar
+      Entry: 1
+      Data: maxDistanceFromOrigin
+    - Name: useMinRange
+      Entry: 5
+      Data: false
+    - Name: minDistanceType
+      Entry: 3
+      Data: 0
+    - Name: minDistanceVar
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: scaler
+      Entry: 7
+      Data: 6|ParabolaScaler, Assembly-CSharp
+    - Name: meshMode
+      Entry: 3
+      Data: 0
+    - Name: CustomMesh
+      Entry: 6
+      Data: 
+    - Name: Material
+      Entry: 10
+      Data: 1
     - Name: canScale
       Entry: 5
       Data: true
@@ -1169,21 +2918,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
---- !u!4 &1023338159
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1023338157}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1, y: 0, z: 6}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1047082519
+--- !u!1 &1105841851
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1191,22 +2926,36 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1047082521}
-  - component: {fileID: 1047082520}
+  - component: {fileID: 1105841852}
+  - component: {fileID: 1105841853}
   m_Layer: 0
-  m_Name: PreviewerScaleVector3 (1)
+  m_Name: EgonR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &1047082520
+  m_IsActive: 1
+--- !u!4 &1105841852
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1105841851}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.0681624, y: 0.103839874, z: 0.2779789}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1383463625}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1105841853
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1047082519}
+  m_GameObject: {fileID: 1105841851}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 75dd4d5cfdc460545b5acffb427fc081, type: 3}
@@ -1216,179 +2965,41 @@ MonoBehaviour:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 2138096739}
     - {fileID: 2100000, guid: b1574ef18d899b64a8232a7e70ea3ac6, type: 2}
+    - {fileID: 2100000, guid: bce132c9c397e7a4fb2f25adc7d3a3a1, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes:
     - Name: Champion
-      Entry: 10
-      Data: 0
+      Entry: 6
+      Data: 
     - Name: PreviewConfigs
       Entry: 7
       Data: 0|System.Collections.Generic.List`1[[PreviewConfig, Assembly-CSharp]],
         mscorlib
     - Name: 
       Entry: 12
-      Data: 1
+      Data: 2
     - Name: 
       Entry: 7
       Data: 1|PreviewConfig, Assembly-CSharp
     - Name: Material
       Entry: 10
-      Data: 1
-    - Name: positioner
-      Entry: 7
-      Data: 2|FollowMousePositioner, Assembly-CSharp
-    - Name: canRotate
-      Entry: 5
-      Data: true
-    - Name: maxDistanceVar
-      Entry: 1
-      Data: maxDistanceFromOrigin
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: scaler
-      Entry: 7
-      Data: 3|ScaleToArea, Assembly-CSharp
-    - Name: meshMode
-      Entry: 3
       Data: 0
-    - Name: canScale
-      Entry: 5
-      Data: false
-    - Name: useAngleMask
-      Entry: 5
-      Data: false
-    - Name: angleVar
-      Entry: 6
-      Data: 
-    - Name: areaScaleMode
-      Entry: 3
-      Data: 0
-    - Name: radiusVar
-      Entry: 6
-      Data: 
-    - Name: areaInVector3Var
-      Entry: 6
-      Data: 
-    - Name: areaInVector2Var
-      Entry: 6
-      Data: 
-    - Name: areaWidthVar
-      Entry: 6
-      Data: 
-    - Name: areaLengthVar
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: _variables
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
---- !u!4 &1047082521
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1047082519}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1, y: 0, z: 6}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1134479288
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1134479289}
-  - component: {fileID: 1134479290}
-  m_Layer: 0
-  m_Name: Previewer
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1134479289
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1134479288}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1134479290
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1134479288}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75dd4d5cfdc460545b5acffb427fc081, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects:
-    - {fileID: 2138096739}
-    - {fileID: 2100000, guid: b1574ef18d899b64a8232a7e70ea3ac6, type: 2}
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: Champion
-      Entry: 10
-      Data: 0
-    - Name: PreviewConfigs
-      Entry: 7
-      Data: 0|System.Collections.Generic.List`1[[PreviewConfig, Assembly-CSharp]],
-        mscorlib
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 1|PreviewConfig, Assembly-CSharp
-    - Name: Material
-      Entry: 10
-      Data: 1
     - Name: positioner
       Entry: 7
       Data: 2|AimToMousePositioner, Assembly-CSharp
-    - Name: maxDistanceVar
+    - Name: useOffset
+      Entry: 5
+      Data: false
+    - Name: offsetVarType
+      Entry: 3
+      Data: 2
+    - Name: offsetVar
       Entry: 1
-      Data: maxDistanceFromOrigin
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -1398,9 +3009,15 @@ MonoBehaviour:
     - Name: meshMode
       Entry: 3
       Data: 0
+    - Name: CustomMesh
+      Entry: 6
+      Data: 
+    - Name: Material
+      Entry: 10
+      Data: 0
     - Name: canScale
       Entry: 5
-      Data: true
+      Data: false
     - Name: useAngleMask
       Entry: 5
       Data: false
@@ -1409,7 +3026,7 @@ MonoBehaviour:
       Data: 
     - Name: areaSizeVar
       Entry: 1
-      Data: dashArea
+      Data: areaVec3
     - Name: limitMaxRange
       Entry: 5
       Data: false
@@ -1426,85 +3043,50 @@ MonoBehaviour:
       Entry: 8
       Data: 
     - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
---- !u!1 &1176130720
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1176130722}
-  - component: {fileID: 1176130721}
-  m_Layer: 0
-  m_Name: Previewer (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &1176130721
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1176130720}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75dd4d5cfdc460545b5acffb427fc081, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects:
-    - {fileID: 2138096739}
-    - {fileID: 2100000, guid: b1574ef18d899b64a8232a7e70ea3ac6, type: 2}
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: Champion
-      Entry: 10
-      Data: 0
-    - Name: PreviewConfigs
       Entry: 7
-      Data: 0|System.Collections.Generic.List`1[[PreviewConfig, Assembly-CSharp]],
-        mscorlib
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 1|PreviewConfig, Assembly-CSharp
+      Data: 4|PreviewConfig, Assembly-CSharp
     - Name: Material
       Entry: 10
       Data: 1
     - Name: positioner
       Entry: 7
-      Data: 2|FollowMousePositioner, Assembly-CSharp
+      Data: 5|FollowMousePositioner, Assembly-CSharp
     - Name: canRotate
       Entry: 5
       Data: true
+    - Name: useMaxRange
+      Entry: 5
+      Data: true
+    - Name: maxDistanceType
+      Entry: 3
+      Data: 2
     - Name: maxDistanceVar
       Entry: 1
-      Data: maxDistanceFromOrigin
+      Data: areaVec3
+    - Name: useMinRange
+      Entry: 5
+      Data: true
+    - Name: minDistanceType
+      Entry: 3
+      Data: 2
+    - Name: minDistanceVar
+      Entry: 1
+      Data: areaVec3
     - Name: 
       Entry: 8
       Data: 
     - Name: scaler
       Entry: 7
-      Data: 3|PreviewScaler, Assembly-CSharp
+      Data: 6|ScaleToArea, Assembly-CSharp
     - Name: meshMode
       Entry: 3
       Data: 0
+    - Name: CustomMesh
+      Entry: 6
+      Data: 
+    - Name: Material
+      Entry: 10
+      Data: 1
     - Name: canScale
       Entry: 5
       Data: false
@@ -1514,6 +3096,27 @@ MonoBehaviour:
     - Name: angleVar
       Entry: 6
       Data: 
+    - Name: areaScaleMode
+      Entry: 3
+      Data: 1
+    - Name: radiusVar
+      Entry: 6
+      Data: 
+    - Name: areaInVector3Var
+      Entry: 6
+      Data: 
+    - Name: areaInVector2Var
+      Entry: 6
+      Data: 
+    - Name: areaWidthVar
+      Entry: 1
+      Data: areaWidth
+    - Name: areaLengthVar
+      Entry: 1
+      Data: areaLength
+    - Name: pivot
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1529,51 +3132,6 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
---- !u!4 &1176130722
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1176130720}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1217622391
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1217622392}
-  m_Layer: 0
-  m_Name: Enemy
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1217622392
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1217622391}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 683151598}
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1225281593
 GameObject:
   m_ObjectHideFlags: 0
@@ -1667,7 +3225,7 @@ Transform:
   m_Father: {fileID: 2138096739}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1450101527
+--- !u!1 &1382953930
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1675,22 +3233,36 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1450101529}
-  - component: {fileID: 1450101528}
+  - component: {fileID: 1382953931}
+  - component: {fileID: 1382953932}
   m_Layer: 0
-  m_Name: PreviewerScaleVector2
+  m_Name: GromaR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &1450101528
+--- !u!4 &1382953931
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1382953930}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 751301273}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1382953932
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1450101527}
+  m_GameObject: {fileID: 1382953930}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 75dd4d5cfdc460545b5acffb427fc081, type: 3}
@@ -1700,168 +3272,42 @@ MonoBehaviour:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 2138096739}
-    - {fileID: 2100000, guid: b1574ef18d899b64a8232a7e70ea3ac6, type: 2}
+    - {fileID: 2100000, guid: fc575301c84ddde4092013dc17211498, type: 2}
+    - {fileID: 2100000, guid: f7b76e7c2480b8a4bb31da99871af246, type: 2}
+    - {fileID: 1446781507269518391, guid: d5700d1e65308004882acef520b2401a, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes:
     - Name: Champion
-      Entry: 10
-      Data: 0
+      Entry: 6
+      Data: 
     - Name: PreviewConfigs
       Entry: 7
       Data: 0|System.Collections.Generic.List`1[[PreviewConfig, Assembly-CSharp]],
         mscorlib
     - Name: 
       Entry: 12
-      Data: 1
+      Data: 2
     - Name: 
       Entry: 7
       Data: 1|PreviewConfig, Assembly-CSharp
     - Name: Material
       Entry: 10
-      Data: 1
+      Data: 0
     - Name: positioner
       Entry: 7
-      Data: 2|FollowMousePositioner, Assembly-CSharp
-    - Name: canRotate
+      Data: 2|AimToMousePositioner, Assembly-CSharp
+    - Name: useOffset
       Entry: 5
       Data: true
-    - Name: maxDistanceVar
-      Entry: 1
-      Data: maxDistanceFromOrigin
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: scaler
-      Entry: 7
-      Data: 3|ScaleToArea, Assembly-CSharp
-    - Name: meshMode
-      Entry: 3
-      Data: 0
-    - Name: canScale
-      Entry: 5
-      Data: true
-    - Name: useAngleMask
-      Entry: 5
-      Data: false
-    - Name: angleVar
-      Entry: 6
-      Data: 
-    - Name: areaScaleMode
+    - Name: offsetVarType
       Entry: 3
       Data: 2
-    - Name: radiusVar
+    - Name: offsetVar
       Entry: 1
-      Data: areaRadiusFloat
-    - Name: areaInVector3Var
-      Entry: 1
-      Data: areaVec3
-    - Name: areaInVector2Var
-      Entry: 1
-      Data: areaVec2
-    - Name: areaWidthVar
-      Entry: 1
-      Data: areaWidth
-    - Name: areaLengthVar
-      Entry: 1
-      Data: areaLength
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: _variables
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
---- !u!4 &1450101529
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1450101527}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -14, y: 0, z: 7}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1473217749
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1473217751}
-  - component: {fileID: 1473217750}
-  m_Layer: 0
-  m_Name: PreviewerScaleRadius
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &1473217750
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1473217749}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75dd4d5cfdc460545b5acffb427fc081, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects:
-    - {fileID: 2138096739}
-    - {fileID: 2100000, guid: b1574ef18d899b64a8232a7e70ea3ac6, type: 2}
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: Champion
-      Entry: 10
-      Data: 0
-    - Name: PreviewConfigs
-      Entry: 7
-      Data: 0|System.Collections.Generic.List`1[[PreviewConfig, Assembly-CSharp]],
-        mscorlib
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 1|PreviewConfig, Assembly-CSharp
-    - Name: Material
-      Entry: 10
-      Data: 1
-    - Name: positioner
-      Entry: 7
-      Data: 2|FollowMousePositioner, Assembly-CSharp
-    - Name: canRotate
-      Entry: 5
-      Data: true
-    - Name: maxDistanceVar
-      Entry: 1
-      Data: maxDistanceFromOrigin
+      Data: bannerOFWarOffset
     - Name: 
       Entry: 8
       Data: 
@@ -1871,6 +3317,12 @@ MonoBehaviour:
     - Name: meshMode
       Entry: 3
       Data: 0
+    - Name: CustomMesh
+      Entry: 6
+      Data: 
+    - Name: Material
+      Entry: 10
+      Data: 1
     - Name: canScale
       Entry: 5
       Data: true
@@ -1887,17 +3339,92 @@ MonoBehaviour:
       Entry: 1
       Data: areaRadiusFloat
     - Name: areaInVector3Var
-      Entry: 1
-      Data: areaVec3
+      Entry: 6
+      Data: 
     - Name: areaInVector2Var
-      Entry: 1
-      Data: areaVec2
+      Entry: 6
+      Data: 
     - Name: areaWidthVar
-      Entry: 1
-      Data: areaWidth
+      Entry: 6
+      Data: 
     - Name: areaLengthVar
+      Entry: 6
+      Data: 
+    - Name: pivot
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _variables
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 4|PreviewConfig, Assembly-CSharp
+    - Name: Material
+      Entry: 6
+      Data: 
+    - Name: positioner
+      Entry: 7
+      Data: 5|AimToMousePositioner, Assembly-CSharp
+    - Name: useOffset
+      Entry: 5
+      Data: true
+    - Name: offsetVarType
+      Entry: 3
+      Data: 2
+    - Name: offsetVar
       Entry: 1
-      Data: areaLength
+      Data: bannerOFWarOffset
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: scaler
+      Entry: 7
+      Data: 6|ScaleToArea, Assembly-CSharp
+    - Name: meshMode
+      Entry: 3
+      Data: 2
+    - Name: CustomMesh
+      Entry: 10
+      Data: 2
+    - Name: Material
+      Entry: 6
+      Data: 
+    - Name: canScale
+      Entry: 5
+      Data: false
+    - Name: useAngleMask
+      Entry: 5
+      Data: false
+    - Name: angleVar
+      Entry: 6
+      Data: 
+    - Name: areaScaleMode
+      Entry: 3
+      Data: 0
+    - Name: radiusVar
+      Entry: 1
+      Data: 
+    - Name: areaInVector3Var
+      Entry: 6
+      Data: 
+    - Name: areaInVector2Var
+      Entry: 6
+      Data: 
+    - Name: areaWidthVar
+      Entry: 6
+      Data: 
+    - Name: areaLengthVar
+      Entry: 6
+      Data: 
+    - Name: pivot
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -1913,21 +3440,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
---- !u!4 &1473217751
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1473217749}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -13, y: 0, z: -8}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1610164437
+--- !u!1 &1383463624
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1935,90 +3448,1086 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1610164438}
-  - component: {fileID: 1610164441}
-  - component: {fileID: 1610164440}
-  - component: {fileID: 1610164439}
+  - component: {fileID: 1383463625}
   m_Layer: 0
-  m_Name: Head
+  m_Name: Egon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1383463625
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1383463624}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.0681624, y: -0.103839874, z: -0.2779789}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 556331041}
+  - {fileID: 1854616784}
+  - {fileID: 1821074747}
+  - {fileID: 1105841852}
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1422614034
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1422614035}
+  - component: {fileID: 1422614036}
+  m_Layer: 0
+  m_Name: HulgurQ_jump
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1610164438
+--- !u!4 &1422614035
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1610164437}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.157, z: 0}
-  m_LocalScale: {x: 0.84428, y: 0.84428, z: 0.84428}
-  m_Children:
-  - {fileID: 1913951553}
-  m_Father: {fileID: 683151598}
+  m_GameObject: {fileID: 1422614034}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1741704300}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &1610164439
-SphereCollider:
+--- !u!114 &1422614036
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1610164437}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_GameObject: {fileID: 1422614034}
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1610164440
-MeshRenderer:
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75dd4d5cfdc460545b5acffb427fc081, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 2100000, guid: fc575301c84ddde4092013dc17211498, type: 2}
+    - {fileID: 2100000, guid: 652107f36a28e44479c0b827dee5852a, type: 2}
+    - {fileID: 2100000, guid: 48c7eaf9af43bcd4fb682d27d4445143, type: 2}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Champion
+      Entry: 6
+      Data: 
+    - Name: PreviewConfigs
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[PreviewConfig, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 7
+      Data: 1|PreviewConfig, Assembly-CSharp
+    - Name: Material
+      Entry: 10
+      Data: 0
+    - Name: positioner
+      Entry: 7
+      Data: 2|FollowMousePositioner, Assembly-CSharp
+    - Name: canRotate
+      Entry: 5
+      Data: true
+    - Name: useMaxRange
+      Entry: 5
+      Data: true
+    - Name: maxDistanceType
+      Entry: 3
+      Data: 0
+    - Name: maxDistanceVar
+      Entry: 1
+      Data: maxDistanceFromOrigin
+    - Name: useMinRange
+      Entry: 5
+      Data: false
+    - Name: minDistanceType
+      Entry: 3
+      Data: 0
+    - Name: minDistanceVar
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: scaler
+      Entry: 7
+      Data: 3|ScaleToArea, Assembly-CSharp
+    - Name: meshMode
+      Entry: 3
+      Data: 0
+    - Name: CustomMesh
+      Entry: 6
+      Data: 
+    - Name: Material
+      Entry: 10
+      Data: 0
+    - Name: canScale
+      Entry: 5
+      Data: true
+    - Name: useAngleMask
+      Entry: 5
+      Data: false
+    - Name: angleVar
+      Entry: 6
+      Data: 
+    - Name: areaScaleMode
+      Entry: 3
+      Data: 0
+    - Name: radiusVar
+      Entry: 1
+      Data: radius1
+    - Name: areaInVector3Var
+      Entry: 6
+      Data: 
+    - Name: areaInVector2Var
+      Entry: 6
+      Data: 
+    - Name: areaWidthVar
+      Entry: 6
+      Data: 
+    - Name: areaLengthVar
+      Entry: 6
+      Data: 
+    - Name: pivot
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _variables
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 4|PreviewConfig, Assembly-CSharp
+    - Name: Material
+      Entry: 10
+      Data: 1
+    - Name: positioner
+      Entry: 7
+      Data: 5|FollowMousePositioner, Assembly-CSharp
+    - Name: canRotate
+      Entry: 5
+      Data: true
+    - Name: useMaxRange
+      Entry: 5
+      Data: true
+    - Name: maxDistanceType
+      Entry: 3
+      Data: 0
+    - Name: maxDistanceVar
+      Entry: 1
+      Data: maxDistanceFromOrigin
+    - Name: useMinRange
+      Entry: 5
+      Data: false
+    - Name: minDistanceType
+      Entry: 3
+      Data: 0
+    - Name: minDistanceVar
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: scaler
+      Entry: 7
+      Data: 6|ParabolaScaler, Assembly-CSharp
+    - Name: meshMode
+      Entry: 3
+      Data: 0
+    - Name: CustomMesh
+      Entry: 6
+      Data: 
+    - Name: Material
+      Entry: 10
+      Data: 1
+    - Name: canScale
+      Entry: 5
+      Data: true
+    - Name: useAngleMask
+      Entry: 5
+      Data: false
+    - Name: angleVar
+      Entry: 6
+      Data: 
+    - Name: gravity
+      Entry: 4
+      Data: 60
+    - Name: angle
+      Entry: 4
+      Data: 45
+    - Name: meshWidth
+      Entry: 4
+      Data: 0.2
+    - Name: offset
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 1.6
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: amountOfPoints
+      Entry: 3
+      Data: 40
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _variables
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 7|PreviewConfig, Assembly-CSharp
+    - Name: Material
+      Entry: 10
+      Data: 2
+    - Name: positioner
+      Entry: 7
+      Data: 8|AimToMousePositioner, Assembly-CSharp
+    - Name: useOffset
+      Entry: 5
+      Data: false
+    - Name: offsetVarType
+      Entry: 3
+      Data: 0
+    - Name: offsetVar
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: scaler
+      Entry: 7
+      Data: 9|ScaleToArea, Assembly-CSharp
+    - Name: meshMode
+      Entry: 3
+      Data: 0
+    - Name: CustomMesh
+      Entry: 6
+      Data: 
+    - Name: Material
+      Entry: 10
+      Data: 2
+    - Name: canScale
+      Entry: 5
+      Data: true
+    - Name: useAngleMask
+      Entry: 5
+      Data: false
+    - Name: angleVar
+      Entry: 6
+      Data: 
+    - Name: areaScaleMode
+      Entry: 3
+      Data: 0
+    - Name: radiusVar
+      Entry: 1
+      Data: radius5
+    - Name: areaInVector3Var
+      Entry: 6
+      Data: 
+    - Name: areaInVector2Var
+      Entry: 6
+      Data: 
+    - Name: areaWidthVar
+      Entry: 6
+      Data: 
+    - Name: areaLengthVar
+      Entry: 6
+      Data: 
+    - Name: pivot
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _variables
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+--- !u!1 &1483805584
+GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1610164437}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1483805585}
+  - component: {fileID: 1483805586}
+  m_Layer: 0
+  m_Name: HulgurE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1483805585
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1483805584}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1741704300}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1483805586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1483805584}
   m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &1610164441
-MeshFilter:
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75dd4d5cfdc460545b5acffb427fc081, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 2100000, guid: fc575301c84ddde4092013dc17211498, type: 2}
+    - {fileID: 2100000, guid: 652107f36a28e44479c0b827dee5852a, type: 2}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Champion
+      Entry: 6
+      Data: 
+    - Name: PreviewConfigs
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[PreviewConfig, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 1|PreviewConfig, Assembly-CSharp
+    - Name: Material
+      Entry: 10
+      Data: 0
+    - Name: positioner
+      Entry: 7
+      Data: 2|FollowMousePositioner, Assembly-CSharp
+    - Name: canRotate
+      Entry: 5
+      Data: true
+    - Name: useMaxRange
+      Entry: 5
+      Data: true
+    - Name: maxDistanceType
+      Entry: 3
+      Data: 0
+    - Name: maxDistanceVar
+      Entry: 1
+      Data: maxDistanceFromOrigin
+    - Name: useMinRange
+      Entry: 5
+      Data: false
+    - Name: minDistanceType
+      Entry: 3
+      Data: 0
+    - Name: minDistanceVar
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: scaler
+      Entry: 7
+      Data: 3|ScaleToArea, Assembly-CSharp
+    - Name: meshMode
+      Entry: 3
+      Data: 0
+    - Name: CustomMesh
+      Entry: 6
+      Data: 
+    - Name: Material
+      Entry: 10
+      Data: 0
+    - Name: canScale
+      Entry: 5
+      Data: true
+    - Name: useAngleMask
+      Entry: 5
+      Data: false
+    - Name: angleVar
+      Entry: 6
+      Data: 
+    - Name: areaScaleMode
+      Entry: 3
+      Data: 0
+    - Name: radiusVar
+      Entry: 1
+      Data: radius1
+    - Name: areaInVector3Var
+      Entry: 6
+      Data: 
+    - Name: areaInVector2Var
+      Entry: 6
+      Data: 
+    - Name: areaWidthVar
+      Entry: 6
+      Data: 
+    - Name: areaLengthVar
+      Entry: 6
+      Data: 
+    - Name: pivot
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _variables
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 4|PreviewConfig, Assembly-CSharp
+    - Name: Material
+      Entry: 10
+      Data: 1
+    - Name: positioner
+      Entry: 7
+      Data: 5|FollowMousePositioner, Assembly-CSharp
+    - Name: canRotate
+      Entry: 5
+      Data: true
+    - Name: useMaxRange
+      Entry: 5
+      Data: true
+    - Name: maxDistanceType
+      Entry: 3
+      Data: 0
+    - Name: maxDistanceVar
+      Entry: 1
+      Data: maxDistanceFromOrigin
+    - Name: useMinRange
+      Entry: 5
+      Data: false
+    - Name: minDistanceType
+      Entry: 3
+      Data: 0
+    - Name: minDistanceVar
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: scaler
+      Entry: 7
+      Data: 6|ParabolaScaler, Assembly-CSharp
+    - Name: meshMode
+      Entry: 3
+      Data: 0
+    - Name: CustomMesh
+      Entry: 6
+      Data: 
+    - Name: Material
+      Entry: 10
+      Data: 1
+    - Name: canScale
+      Entry: 5
+      Data: true
+    - Name: useAngleMask
+      Entry: 5
+      Data: false
+    - Name: angleVar
+      Entry: 6
+      Data: 
+    - Name: gravity
+      Entry: 4
+      Data: 60
+    - Name: angle
+      Entry: 4
+      Data: 45
+    - Name: meshWidth
+      Entry: 4
+      Data: 0.2
+    - Name: offset
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 1.6
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: amountOfPoints
+      Entry: 3
+      Data: 40
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _variables
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+--- !u!1 &1534110509
+GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1610164437}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1534110510}
+  - component: {fileID: 1534110511}
+  m_Layer: 0
+  m_Name: KregF
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1534110510
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1534110509}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2091336234}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1534110511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1534110509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75dd4d5cfdc460545b5acffb427fc081, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 2100000, guid: fc575301c84ddde4092013dc17211498, type: 2}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Champion
+      Entry: 6
+      Data: 
+    - Name: PreviewConfigs
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[PreviewConfig, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|PreviewConfig, Assembly-CSharp
+    - Name: Material
+      Entry: 10
+      Data: 0
+    - Name: positioner
+      Entry: 7
+      Data: 2|FollowMousePositioner, Assembly-CSharp
+    - Name: canRotate
+      Entry: 5
+      Data: false
+    - Name: useMaxRange
+      Entry: 5
+      Data: false
+    - Name: maxDistanceType
+      Entry: 3
+      Data: 0
+    - Name: maxDistanceVar
+      Entry: 1
+      Data: maxDistanceFromOrigin
+    - Name: useMinRange
+      Entry: 5
+      Data: false
+    - Name: minDistanceType
+      Entry: 3
+      Data: 0
+    - Name: minDistanceVar
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: scaler
+      Entry: 7
+      Data: 3|ScaleToArea, Assembly-CSharp
+    - Name: meshMode
+      Entry: 3
+      Data: 0
+    - Name: CustomMesh
+      Entry: 6
+      Data: 
+    - Name: Material
+      Entry: 10
+      Data: 0
+    - Name: canScale
+      Entry: 5
+      Data: true
+    - Name: useAngleMask
+      Entry: 5
+      Data: false
+    - Name: angleVar
+      Entry: 6
+      Data: 
+    - Name: areaScaleMode
+      Entry: 3
+      Data: 0
+    - Name: radiusVar
+      Entry: 1
+      Data: Range
+    - Name: areaInVector3Var
+      Entry: 6
+      Data: 
+    - Name: areaInVector2Var
+      Entry: 6
+      Data: 
+    - Name: areaWidthVar
+      Entry: 6
+      Data: 
+    - Name: areaLengthVar
+      Entry: 6
+      Data: 
+    - Name: pivot
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _variables
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+--- !u!1 &1611787824
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1611787825}
+  - component: {fileID: 1611787826}
+  m_Layer: 0
+  m_Name: KrubF
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1611787825
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611787824}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 163571320}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1611787826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611787824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75dd4d5cfdc460545b5acffb427fc081, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 2100000, guid: fc575301c84ddde4092013dc17211498, type: 2}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Champion
+      Entry: 6
+      Data: 
+    - Name: PreviewConfigs
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[PreviewConfig, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|PreviewConfig, Assembly-CSharp
+    - Name: Material
+      Entry: 10
+      Data: 0
+    - Name: positioner
+      Entry: 7
+      Data: 2|FollowMousePositioner, Assembly-CSharp
+    - Name: canRotate
+      Entry: 5
+      Data: false
+    - Name: useMaxRange
+      Entry: 5
+      Data: false
+    - Name: maxDistanceType
+      Entry: 3
+      Data: 0
+    - Name: maxDistanceVar
+      Entry: 1
+      Data: maxDistanceFromOrigin
+    - Name: useMinRange
+      Entry: 5
+      Data: false
+    - Name: minDistanceType
+      Entry: 3
+      Data: 0
+    - Name: minDistanceVar
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: scaler
+      Entry: 7
+      Data: 3|ScaleToArea, Assembly-CSharp
+    - Name: meshMode
+      Entry: 3
+      Data: 0
+    - Name: CustomMesh
+      Entry: 6
+      Data: 
+    - Name: Material
+      Entry: 10
+      Data: 0
+    - Name: canScale
+      Entry: 5
+      Data: true
+    - Name: useAngleMask
+      Entry: 5
+      Data: false
+    - Name: angleVar
+      Entry: 6
+      Data: 
+    - Name: areaScaleMode
+      Entry: 3
+      Data: 0
+    - Name: radiusVar
+      Entry: 1
+      Data: Range
+    - Name: areaInVector3Var
+      Entry: 6
+      Data: 
+    - Name: areaInVector2Var
+      Entry: 6
+      Data: 
+    - Name: areaWidthVar
+      Entry: 6
+      Data: 
+    - Name: areaLengthVar
+      Entry: 6
+      Data: 
+    - Name: pivot
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _variables
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+--- !u!1 &1741704299
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1741704300}
+  m_Layer: 0
+  m_Name: Hulgur
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1741704300
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1741704299}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1422614035}
+  - {fileID: 401391399}
+  - {fileID: 1483805585}
+  - {fileID: 672696105}
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1766710450
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1766710451}
+  - component: {fileID: 1766710452}
+  m_Layer: 0
+  m_Name: KregR
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1766710451
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766710450}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2091336234}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1766710452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766710450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75dd4d5cfdc460545b5acffb427fc081, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 2100000, guid: fc575301c84ddde4092013dc17211498, type: 2}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Champion
+      Entry: 6
+      Data: 
+    - Name: PreviewConfigs
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[PreviewConfig, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|PreviewConfig, Assembly-CSharp
+    - Name: Material
+      Entry: 10
+      Data: 0
+    - Name: positioner
+      Entry: 7
+      Data: 2|FollowMousePositioner, Assembly-CSharp
+    - Name: canRotate
+      Entry: 5
+      Data: true
+    - Name: useMaxRange
+      Entry: 5
+      Data: true
+    - Name: maxDistanceType
+      Entry: 3
+      Data: 0
+    - Name: maxDistanceVar
+      Entry: 1
+      Data: maxDistanceFromOrigin
+    - Name: useMinRange
+      Entry: 5
+      Data: false
+    - Name: minDistanceType
+      Entry: 3
+      Data: 0
+    - Name: minDistanceVar
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: scaler
+      Entry: 7
+      Data: 3|ScaleToArea, Assembly-CSharp
+    - Name: meshMode
+      Entry: 3
+      Data: 0
+    - Name: CustomMesh
+      Entry: 6
+      Data: 
+    - Name: Material
+      Entry: 10
+      Data: 0
+    - Name: canScale
+      Entry: 5
+      Data: true
+    - Name: useAngleMask
+      Entry: 5
+      Data: false
+    - Name: angleVar
+      Entry: 6
+      Data: 
+    - Name: areaScaleMode
+      Entry: 3
+      Data: 0
+    - Name: radiusVar
+      Entry: 1
+      Data: Range
+    - Name: areaInVector3Var
+      Entry: 6
+      Data: 
+    - Name: areaInVector2Var
+      Entry: 6
+      Data: 
+    - Name: areaWidthVar
+      Entry: 6
+      Data: 
+    - Name: areaLengthVar
+      Entry: 6
+      Data: 
+    - Name: pivot
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _variables
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
 --- !u!1 &1777623593
 GameObject:
   m_ObjectHideFlags: 0
@@ -2111,7 +4620,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1777623593}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1856346403
+--- !u!1 &1821074746
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2119,22 +4628,36 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1856346405}
-  - component: {fileID: 1856346404}
+  - component: {fileID: 1821074747}
+  - component: {fileID: 1821074748}
   m_Layer: 0
-  m_Name: Previewer (3)
+  m_Name: EgonF
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &1856346404
+--- !u!4 &1821074747
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1821074746}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.0681624, y: 0.103839874, z: 0.2779789}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1383463625}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1821074748
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1856346403}
+  m_GameObject: {fileID: 1821074746}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 75dd4d5cfdc460545b5acffb427fc081, type: 3}
@@ -2144,7 +4667,6 @@ MonoBehaviour:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 2138096739}
     - {fileID: 2100000, guid: fc575301c84ddde4092013dc17211498, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
@@ -2152,8 +4674,8 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes:
     - Name: Champion
-      Entry: 10
-      Data: 0
+      Entry: 6
+      Data: 
     - Name: PreviewConfigs
       Entry: 7
       Data: 0|System.Collections.Generic.List`1[[PreviewConfig, Assembly-CSharp]],
@@ -2166,13 +4688,313 @@ MonoBehaviour:
       Data: 1|PreviewConfig, Assembly-CSharp
     - Name: Material
       Entry: 10
-      Data: 1
+      Data: 0
     - Name: positioner
       Entry: 7
-      Data: 2|AimToMousePositioner, Assembly-CSharp
+      Data: 2|FollowMousePositioner, Assembly-CSharp
+    - Name: canRotate
+      Entry: 5
+      Data: false
+    - Name: useMaxRange
+      Entry: 5
+      Data: false
+    - Name: maxDistanceType
+      Entry: 3
+      Data: 0
     - Name: maxDistanceVar
       Entry: 1
       Data: maxDistanceFromOrigin
+    - Name: useMinRange
+      Entry: 5
+      Data: false
+    - Name: minDistanceType
+      Entry: 3
+      Data: 0
+    - Name: minDistanceVar
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: scaler
+      Entry: 7
+      Data: 3|ScaleToArea, Assembly-CSharp
+    - Name: meshMode
+      Entry: 3
+      Data: 0
+    - Name: CustomMesh
+      Entry: 6
+      Data: 
+    - Name: Material
+      Entry: 10
+      Data: 0
+    - Name: canScale
+      Entry: 5
+      Data: true
+    - Name: useAngleMask
+      Entry: 5
+      Data: false
+    - Name: angleVar
+      Entry: 6
+      Data: 
+    - Name: areaScaleMode
+      Entry: 3
+      Data: 0
+    - Name: radiusVar
+      Entry: 1
+      Data: Range
+    - Name: areaInVector3Var
+      Entry: 6
+      Data: 
+    - Name: areaInVector2Var
+      Entry: 6
+      Data: 
+    - Name: areaWidthVar
+      Entry: 6
+      Data: 
+    - Name: areaLengthVar
+      Entry: 6
+      Data: 
+    - Name: pivot
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _variables
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+--- !u!1 &1840036244
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1840036245}
+  - component: {fileID: 1840036246}
+  m_Layer: 0
+  m_Name: KrubR
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1840036245
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1840036244}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 163571320}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1840036246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1840036244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75dd4d5cfdc460545b5acffb427fc081, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 2100000, guid: fc575301c84ddde4092013dc17211498, type: 2}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Champion
+      Entry: 6
+      Data: 
+    - Name: PreviewConfigs
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[PreviewConfig, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|PreviewConfig, Assembly-CSharp
+    - Name: Material
+      Entry: 10
+      Data: 0
+    - Name: positioner
+      Entry: 7
+      Data: 2|AimToMousePositioner, Assembly-CSharp
+    - Name: useOffset
+      Entry: 5
+      Data: false
+    - Name: offsetVarType
+      Entry: 3
+      Data: 0
+    - Name: offsetVar
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: scaler
+      Entry: 7
+      Data: 3|ScaleToArea, Assembly-CSharp
+    - Name: meshMode
+      Entry: 3
+      Data: 0
+    - Name: CustomMesh
+      Entry: 6
+      Data: 
+    - Name: Material
+      Entry: 10
+      Data: 0
+    - Name: canScale
+      Entry: 5
+      Data: true
+    - Name: useAngleMask
+      Entry: 5
+      Data: false
+    - Name: angleVar
+      Entry: 6
+      Data: 
+    - Name: areaScaleMode
+      Entry: 3
+      Data: 0
+    - Name: radiusVar
+      Entry: 1
+      Data: radius4
+    - Name: areaInVector3Var
+      Entry: 6
+      Data: 
+    - Name: areaInVector2Var
+      Entry: 6
+      Data: 
+    - Name: areaWidthVar
+      Entry: 6
+      Data: 
+    - Name: areaLengthVar
+      Entry: 6
+      Data: 
+    - Name: pivot
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _variables
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+--- !u!1 &1854616783
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1854616784}
+  - component: {fileID: 1854616785}
+  m_Layer: 0
+  m_Name: EgonE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1854616784
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1854616783}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.0681624, y: 0.103839874, z: 0.2779789}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1383463625}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1854616785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1854616783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75dd4d5cfdc460545b5acffb427fc081, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 2100000, guid: b1574ef18d899b64a8232a7e70ea3ac6, type: 2}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Champion
+      Entry: 6
+      Data: 
+    - Name: PreviewConfigs
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[PreviewConfig, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|PreviewConfig, Assembly-CSharp
+    - Name: Material
+      Entry: 10
+      Data: 0
+    - Name: positioner
+      Entry: 7
+      Data: 2|AimToMousePositioner, Assembly-CSharp
+    - Name: useOffset
+      Entry: 5
+      Data: false
+    - Name: offsetVarType
+      Entry: 3
+      Data: 0
+    - Name: offsetVar
+      Entry: 6
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -2182,18 +5004,24 @@ MonoBehaviour:
     - Name: meshMode
       Entry: 3
       Data: 0
+    - Name: CustomMesh
+      Entry: 6
+      Data: 
+    - Name: Material
+      Entry: 10
+      Data: 0
     - Name: canScale
       Entry: 5
-      Data: true
+      Data: false
     - Name: useAngleMask
       Entry: 5
-      Data: true
+      Data: false
     - Name: angleVar
-      Entry: 1
-      Data: areaAngle
+      Entry: 6
+      Data: 
     - Name: areaSizeVar
       Entry: 1
-      Data: dashArea
+      Data: areaVec3
     - Name: limitMaxRange
       Entry: 5
       Data: false
@@ -2215,21 +5043,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
---- !u!4 &1856346405
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1856346403}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 14
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1913951552
+--- !u!1 &1937866971
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2237,114 +5051,36 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1913951553}
-  - component: {fileID: 1913951556}
-  - component: {fileID: 1913951555}
-  - component: {fileID: 1913951554}
+  - component: {fileID: 1937866972}
+  - component: {fileID: 1937866973}
   m_Layer: 0
-  m_Name: Nose
+  m_Name: SulaQ
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1913951553
+--- !u!4 &1937866972
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1913951552}
-  m_LocalRotation: {x: -0.25881857, y: -0, z: -0, w: 0.965926}
-  m_LocalPosition: {x: 0, y: -0.013, z: 0.508}
-  m_LocalScale: {x: 0.31513634, y: 0.31513634, z: 0.31513634}
+  m_GameObject: {fileID: 1937866971}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1610164438}
+  m_Father: {fileID: 2093100712}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -30.000002, y: 0, z: 0}
---- !u!136 &1913951554
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1913951552}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1913951555
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1913951552}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 952891926b3cc6646a14641d4c8ab432, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &1913951556
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1913951552}
-  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &2037047634
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2037047636}
-  - component: {fileID: 2037047635}
-  m_Layer: 0
-  m_Name: PreviewerScaleXZ
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &2037047635
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1937866973
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2037047634}
+  m_GameObject: {fileID: 1937866971}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 75dd4d5cfdc460545b5acffb427fc081, type: 3}
@@ -2354,7 +5090,6 @@ MonoBehaviour:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 2138096739}
     - {fileID: 2100000, guid: b1574ef18d899b64a8232a7e70ea3ac6, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
@@ -2362,8 +5097,8 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes:
     - Name: Champion
-      Entry: 10
-      Data: 0
+      Entry: 6
+      Data: 
     - Name: PreviewConfigs
       Entry: 7
       Data: 0|System.Collections.Generic.List`1[[PreviewConfig, Assembly-CSharp]],
@@ -2376,24 +5111,33 @@ MonoBehaviour:
       Data: 1|PreviewConfig, Assembly-CSharp
     - Name: Material
       Entry: 10
-      Data: 1
+      Data: 0
     - Name: positioner
       Entry: 7
-      Data: 2|FollowMousePositioner, Assembly-CSharp
-    - Name: canRotate
+      Data: 2|AimToMousePositioner, Assembly-CSharp
+    - Name: useOffset
       Entry: 5
-      Data: true
-    - Name: maxDistanceVar
-      Entry: 1
-      Data: maxDistanceFromOrigin
+      Data: false
+    - Name: offsetVarType
+      Entry: 3
+      Data: 0
+    - Name: offsetVar
+      Entry: 6
+      Data: 
     - Name: 
       Entry: 8
       Data: 
     - Name: scaler
       Entry: 7
-      Data: 3|ScaleToArea, Assembly-CSharp
+      Data: 3|ScaleToMouseScaler, Assembly-CSharp
     - Name: meshMode
       Entry: 3
+      Data: 0
+    - Name: CustomMesh
+      Entry: 6
+      Data: 
+    - Name: Material
+      Entry: 10
       Data: 0
     - Name: canScale
       Entry: 5
@@ -2404,24 +5148,15 @@ MonoBehaviour:
     - Name: angleVar
       Entry: 6
       Data: 
-    - Name: areaScaleMode
-      Entry: 3
-      Data: 1
-    - Name: radiusVar
+    - Name: areaSizeVar
       Entry: 1
-      Data: areaRadiusFloat
-    - Name: areaInVector3Var
-      Entry: 1
-      Data: areaVec3
-    - Name: areaInVector2Var
-      Entry: 1
-      Data: areaVec2
-    - Name: areaWidthVar
-      Entry: 1
-      Data: areaWidth
-    - Name: areaLengthVar
-      Entry: 1
-      Data: areaLength
+      Data: dashArea
+    - Name: limitMaxRange
+      Entry: 5
+      Data: true
+    - Name: limitMinRange
+      Entry: 5
+      Data: false
     - Name: 
       Entry: 8
       Data: 
@@ -2437,20 +5172,6 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
---- !u!4 &2037047636
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2037047634}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7, y: 0, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2063913659
 GameObject:
   m_ObjectHideFlags: 0
@@ -2543,6 +5264,250 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2074232162
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2074232163}
+  - component: {fileID: 2074232164}
+  m_Layer: 0
+  m_Name: SagharoQ
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2074232163
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2074232162}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 766101845}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2074232164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2074232162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75dd4d5cfdc460545b5acffb427fc081, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 2100000, guid: fc575301c84ddde4092013dc17211498, type: 2}
+    - {fileID: 2100000, guid: 652107f36a28e44479c0b827dee5852a, type: 2}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Champion
+      Entry: 6
+      Data: 
+    - Name: PreviewConfigs
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[PreviewConfig, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 1|PreviewConfig, Assembly-CSharp
+    - Name: Material
+      Entry: 10
+      Data: 0
+    - Name: positioner
+      Entry: 7
+      Data: 2|FollowMousePositioner, Assembly-CSharp
+    - Name: canRotate
+      Entry: 5
+      Data: true
+    - Name: useMaxRange
+      Entry: 5
+      Data: true
+    - Name: maxDistanceType
+      Entry: 3
+      Data: 0
+    - Name: maxDistanceVar
+      Entry: 1
+      Data: maxDistanceFromOrigin
+    - Name: useMinRange
+      Entry: 5
+      Data: false
+    - Name: minDistanceType
+      Entry: 3
+      Data: 0
+    - Name: minDistanceVar
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: scaler
+      Entry: 7
+      Data: 3|ScaleToArea, Assembly-CSharp
+    - Name: meshMode
+      Entry: 3
+      Data: 0
+    - Name: CustomMesh
+      Entry: 6
+      Data: 
+    - Name: Material
+      Entry: 10
+      Data: 0
+    - Name: canScale
+      Entry: 5
+      Data: true
+    - Name: useAngleMask
+      Entry: 5
+      Data: false
+    - Name: angleVar
+      Entry: 6
+      Data: 
+    - Name: areaScaleMode
+      Entry: 3
+      Data: 0
+    - Name: radiusVar
+      Entry: 1
+      Data: Range
+    - Name: areaInVector3Var
+      Entry: 6
+      Data: 
+    - Name: areaInVector2Var
+      Entry: 6
+      Data: 
+    - Name: areaWidthVar
+      Entry: 6
+      Data: 
+    - Name: areaLengthVar
+      Entry: 6
+      Data: 
+    - Name: pivot
+      Entry: 3
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _variables
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 4|PreviewConfig, Assembly-CSharp
+    - Name: Material
+      Entry: 10
+      Data: 1
+    - Name: positioner
+      Entry: 7
+      Data: 5|FollowMousePositioner, Assembly-CSharp
+    - Name: canRotate
+      Entry: 5
+      Data: true
+    - Name: useMaxRange
+      Entry: 5
+      Data: true
+    - Name: maxDistanceType
+      Entry: 3
+      Data: 0
+    - Name: maxDistanceVar
+      Entry: 1
+      Data: maxDistanceFromOrigin
+    - Name: useMinRange
+      Entry: 5
+      Data: false
+    - Name: minDistanceType
+      Entry: 3
+      Data: 0
+    - Name: minDistanceVar
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: scaler
+      Entry: 7
+      Data: 6|ParabolaScaler, Assembly-CSharp
+    - Name: meshMode
+      Entry: 3
+      Data: 0
+    - Name: CustomMesh
+      Entry: 6
+      Data: 
+    - Name: Material
+      Entry: 10
+      Data: 1
+    - Name: canScale
+      Entry: 5
+      Data: true
+    - Name: useAngleMask
+      Entry: 5
+      Data: false
+    - Name: angleVar
+      Entry: 6
+      Data: 
+    - Name: gravity
+      Entry: 4
+      Data: 60
+    - Name: angle
+      Entry: 4
+      Data: 45
+    - Name: meshWidth
+      Entry: 4
+      Data: 0.2
+    - Name: offset
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 1.6
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: amountOfPoints
+      Entry: 3
+      Data: 40
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _variables
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
 --- !u!1 &2091336233
 GameObject:
   m_ObjectHideFlags: 0
@@ -2571,8 +5536,44 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 441245021}
+  - {fileID: 533852136}
+  - {fileID: 1534110510}
+  - {fileID: 1766710451}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2093100711
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2093100712}
+  m_Layer: 0
+  m_Name: Sula
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &2093100712
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2093100711}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1937866972}
+  - {fileID: 332587485}
+  - {fileID: 674102086}
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2138096738
 GameObject:

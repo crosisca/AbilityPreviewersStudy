@@ -8,15 +8,11 @@ using UnityEngine;
 
 public class AbilityPreviewer : SerializedMonoBehaviour
 {
-    //[SerializeField]
-    //PositionerConfig positionerConfig;
-
     public Ability Ability { get; private set; }
 
     [SerializeField]
     public Transform Champion { get; private set; }
 
-    //[ReadOnly]
     public List<PreviewConfig> PreviewConfigs = new List<PreviewConfig>();
 
     public Vector3 MouseHitPosition { get; private set; }

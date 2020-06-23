@@ -1,36 +1,59 @@
 ﻿using System;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 public class AimToMousePositioner : PreviewPositioner
 {
-    [SerializeField, AbilityDatabaseValue]
-    string maxDistanceVar;
+    [SerializeField]
+    bool useOffset;
 
+    [SerializeField, ShowIf("useOffset")]
+    VariableType offsetVarType;
+
+    [SerializeField, AbilityDatabaseValue, ShowIf("useOffset")]
+    string offsetVar;
+
+    Vector3 targetDirection;
+    
     public override void CalculateTargetLocation()
     {
-        float maxRange = previewConfig.GetValue<float>(maxDistanceVar);
-
-        if (!MathUtils.IsInsideCircle(Origin, maxRange, previewer.MouseHitPosition))
-            Target.position = Origin + (previewer.MouseHitPosition - Origin).normalized * maxRange;
+        if (useOffset)
+        {
+            switch (offsetVarType)
+            {
+                case VariableType.FLOAT:
+                    Target.position = Origin.TransformPoint(Vector3.forward * previewConfig.GetValue<float>(offsetVar));
+                    break;
+                case VariableType.INT:
+                    Target.position = Origin.TransformPoint(Vector3.forward * previewConfig.GetValue<int>(offsetVar));
+                    break;
+                case VariableType.VECTOR3:
+                    Target.position = Origin.TransformPoint(previewConfig.GetValue<Vector3>(offsetVar));
+                    break;
+                case VariableType.VECTOR2:
+                    Target.position = Origin.TransformPoint(previewConfig.GetValue<Vector2>(offsetVar).ToXZPlane());
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException();
+            }
+        }
         else
-            Target.position = previewer.MouseHitPosition;
+            Target.position = OriginPosition;
     }
 
     public override void CalculateTargetRotation ()
     {
-        if (Mathf.Approximately((Target.position - Origin).magnitude, 0))
-            Target.rotation = Quaternion.identity;
-        else
-            Target.rotation = Quaternion.LookRotation(Target.position.FlattenY() - Origin.FlattenY(), Vector3.up);
+        targetDirection = (previewer.MouseHitPosition - OriginPosition).normalized;
+        Target.rotation = Quaternion.LookRotation(targetDirection, Vector3.up);
     }
 
     public override void SetPosition ()
     {
-        PositionerTransform.position = Origin;
+        PositionerTransform.position = TargetPosition;
     }
 
     public override void SetRotation ()
     {
-        PositionerTransform.rotation = Target.rotation;
+        PositionerTransform.rotation = TargetRotation;
     }
 }

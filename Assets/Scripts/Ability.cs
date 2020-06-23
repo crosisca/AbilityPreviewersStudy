@@ -28,12 +28,22 @@ public class Ability : ScriptableObject
 
     public Vector3 areaSizeOfOne = Vector3.one;
 
+    public Vector3 forward3 = Vector3.forward * 3;
+
     public Vector2 areaVec2 = new Vector2(5, 10);
     public Vector3 areaVec3 = new Vector3(2, 1, 6);
 
     public float maxDistanceFromOrigin = 10;
 
     public float areaAngle = 45;
+
+    public Vector3 bannerOFWarOffset = new Vector3(1, 0, 2);
+
+    public float radius1 = 1;
+    public float radius2 = 2;
+    public float radius3 = 3;
+    public float radius4 = 4;
+    public float radius5 = 5;
 
     public bool IsPreviewPositionValid (Vector3 position)
     {

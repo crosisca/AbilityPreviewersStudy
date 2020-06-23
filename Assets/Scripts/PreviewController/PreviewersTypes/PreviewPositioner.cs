@@ -2,7 +2,7 @@
 using UnityEngine;
 
 [Serializable]
-public class PreviewPositioner
+public abstract class PreviewPositioner
 {
     protected AbilityPreviewer previewer;
 
@@ -13,7 +13,8 @@ public class PreviewPositioner
 
     public virtual Vector3 TargetPosition => Target.position;
     public virtual Quaternion TargetRotation => Target.rotation;
-    public virtual Vector3 Origin => previewer.Champion.position;
+    public virtual Vector3 OriginPosition => previewer.Champion.position;
+    public virtual Transform Origin => previewer.Champion;
 
 
     public virtual void Setup(AbilityPreviewer previewer, PreviewConfig previewConfig)

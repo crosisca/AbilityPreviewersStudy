@@ -53,7 +53,10 @@ public class PreviewConfig
                 string key = fieldInfo.GetValue(objToLookForAttribute) as string;
 
                 if (!string.IsNullOrEmpty(key))
-                    Variables.Add(key, null);
+                {
+                    if(!Variables.ContainsKey(key))
+                        Variables.Add(key, null);
+                }
             }
         }
     }
@@ -104,5 +107,29 @@ public class PreviewConfig
     public T GetValue<T> (string variableName)
     {
         return (T)Variables[variableName];
+    }
+
+    public float GetFloat (string variableName, VariableType varType)
+    {
+        float distance;
+        switch (varType)
+        {
+            case VariableType.FLOAT:
+                distance = GetValue<float>(variableName);
+                break;
+            case VariableType.INT:
+                distance = GetValue<int>(variableName);
+                break;
+            case VariableType.VECTOR3:
+                distance = GetValue<Vector3>(variableName).z;
+                break;
+            case VariableType.VECTOR2:
+                distance = GetValue<Vector2>(variableName).y;
+                break;
+            default:
+                throw new ArgumentOutOfRangeException();
+        }
+
+        return distance;
     }
 }

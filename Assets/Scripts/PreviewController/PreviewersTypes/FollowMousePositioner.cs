@@ -1,35 +1,68 @@
-﻿using UnityEngine;
+﻿using System;
+using Sirenix.OdinInspector;
+using UnityEngine;
 
 public class FollowMousePositioner : PreviewPositioner
 {
     [SerializeField]
     bool canRotate = true;
-    
-    [SerializeField, AbilityDatabaseValue]
+
+    [SerializeField]
+    bool useMaxRange;
+
+    [SerializeField, ShowIf("useMaxRange")]
+    VariableType maxDistanceType;
+
+    [SerializeField, AbilityDatabaseValue, ShowIf("useMaxRange")]
     string maxDistanceVar;
 
+    [SerializeField]
+    bool useMinRange;
 
-    //TODO add offset
+    [SerializeField, ShowIf("useMinRange")]
+    VariableType minDistanceType;
+
+    [SerializeField, AbilityDatabaseValue, ShowIf("useMinRange")]
+    string minDistanceVar;
+    
+    Vector3 targetDirection;
+
+    //TODO add offset ??
     //[SerializeField]
     //string offsetVar;
 
     public override void CalculateTargetLocation ()
     {
-        float maxRange = previewConfig.GetValue<float>(maxDistanceVar);
+        Target.position = previewer.MouseHitPosition;
 
-        if (!MathUtils.IsInsideCircle(Origin, maxRange, previewer.MouseHitPosition))
-            Target.position = Origin + (previewer.MouseHitPosition - Origin).normalized * maxRange;
-            //Target.position = Origin + (previewer.MouseHitPosition - Origin).normalized * maxRange + (previewer.Champion.rotation * previewConfig.GetValue<Vector3>(offsetVar));
-        else
-            Target.position = previewer.MouseHitPosition;
+        if (useMaxRange)
+        {
+            float maxRange = previewConfig.GetFloat(maxDistanceVar, maxDistanceType);
+
+            if (!MathUtils.IsInsideCircle(OriginPosition, maxRange, previewer.MouseHitPosition))
+                Target.position = OriginPosition + (previewer.MouseHitPosition - OriginPosition).normalized * maxRange;
+            else if (!useMinRange)
+                Target.position = previewer.MouseHitPosition;
+        }
+        if (useMinRange)
+        {
+            float minRange = previewConfig.GetFloat(minDistanceVar, minDistanceType);
+
+            if (MathUtils.IsInsideCircle(OriginPosition, minRange, previewer.MouseHitPosition))
+                Target.position = OriginPosition + (previewer.MouseHitPosition - OriginPosition).normalized * minRange;
+            else if(!useMaxRange)
+                Target.position = previewer.MouseHitPosition;
+        }
+
+        //add offset?
+        //Target.position += (previewer.Champion.rotation * previewConfig.GetValue<Vector3>(offsetVar));
     }
 
     public override void CalculateTargetRotation ()
     {
-        if(Mathf.Approximately((Target.position.FlattenY() - Origin.FlattenY()).magnitude, 0.1f))
-            Target.rotation = Quaternion.identity;
-        else
-            Target.rotation = Quaternion.LookRotation(Target.position.FlattenY() - Origin.FlattenY(), Vector3.up);
+        targetDirection = Target.position.FlattenY() - OriginPosition.FlattenY();
+
+        Target.rotation = targetDirection != Vector3.zero ? Quaternion.LookRotation(targetDirection, Vector3.up) : Quaternion.identity;
     }
 
     public override void SetPosition ()

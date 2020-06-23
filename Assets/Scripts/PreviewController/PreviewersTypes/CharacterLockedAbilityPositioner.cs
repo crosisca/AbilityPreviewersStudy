@@ -1,33 +1,22 @@
-﻿using UnityEngine;
+﻿using Sirenix.OdinInspector;
+using UnityEngine;
 
 public class CharacterLockedAbilityPositioner : PreviewPositioner
 {
-    [SerializeField, AbilityDatabaseValue]
-    string offsetVector3Var;
+    public override void Setup(AbilityPreviewer previewer, PreviewConfig previewConfig)
+    {
+        base.Setup(previewer, previewConfig);
 
-    [SerializeField]
-    bool canRotate = true;
+        PositionerTransform.rotation = Quaternion.identity;
+    }
 
     public override void CalculateTargetLocation ()
     {
-        Target.position = previewer.Champion.TransformPoint(previewConfig.GetValue<Vector3>(offsetVector3Var));
+        Target.position = OriginPosition;
     }
-
-    public override void CalculateTargetRotation ()
-    {
-        if (Mathf.Approximately((TargetPosition.FlattenY() - Origin.FlattenY()).magnitude, 0.1f))
-            Target.rotation = Quaternion.identity;
-        else
-            Target.rotation = Quaternion.LookRotation(TargetPosition.FlattenY() - Origin.FlattenY(), Vector3.up);
-    }
-
+    
     public override void SetPosition ()
     {
-        PositionerTransform.position = Target.position;
-    }
-
-    public override void SetRotation ()
-    {
-        PositionerTransform.rotation = canRotate ? Target.rotation : Quaternion.identity;
+        PositionerTransform.position = TargetPosition;
     }
 }

@@ -30,19 +30,22 @@ public class ScaleToMouseScaler : PreviewScaler
     
     public override void SetScale ()
     {
-        float originalMaxDistance = previewConfig.GetValue<Vector3>(areaSizeVar).z;
-
         Vector3 newScale = previewConfig.GetValue<Vector3>(areaSizeVar);
 
-        float mouseDistance = Vector3.Distance(positioner.Origin, positioner.TargetPosition);
-        newScale.z = mouseDistance;
+        if (canScale)
+        {
+            float originalMaxDistance = newScale.z;
 
-        if (limitMaxRange)
-            newScale.z = Mathf.Min(mouseDistance, originalMaxDistance);
+            float mouseDistance = Vector3.Distance(positioner.OriginPosition, previewer.MouseHitPosition);
+            newScale.z = mouseDistance;
 
-        if (limitMinRange)
-            newScale.z = Mathf.Max(mouseDistance, originalMaxDistance);
+            if (limitMaxRange)
+                newScale.z = Mathf.Min(mouseDistance, originalMaxDistance);
 
+            if (limitMinRange)
+                newScale.z = Mathf.Max(mouseDistance, originalMaxDistance);
+        }
+        
         scalableMeshPivot.localScale = newScale;
     }
 }

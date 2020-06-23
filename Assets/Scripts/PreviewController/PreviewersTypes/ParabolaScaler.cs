@@ -1,6 +1,7 @@
-﻿using UnityEngine;
+﻿using Sirenix.OdinInspector;
+using UnityEngine;
 
-public class ParabolaPreviewer : PreviewScaler
+public class ParabolaScaler : PreviewScaler
 {
     [SerializeField]
     float gravity = 60;
@@ -19,7 +20,7 @@ public class ParabolaPreviewer : PreviewScaler
     {
         base.Initialize();
         trajectoryParabola = scalableMesh.gameObject.AddComponent<ParabolaMesh>();
-        trajectoryParabola.Initialize(previewer.Champion, positioner.Target, gravity, angle, meshWidth, offset, previewConfig.Material, amountOfPoints);
+        trajectoryParabola.Initialize(previewer.Champion, positioner.Target, gravity, angle, meshWidth, offset, Material, amountOfPoints);
     }
     
     public override void SetScale()
