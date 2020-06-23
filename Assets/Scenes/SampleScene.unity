@@ -244,7 +244,40 @@ Transform:
   - {fileID: 1611787825}
   - {fileID: 1840036245}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &287817286
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 287817287}
+  m_Layer: 0
+  m_Name: Verna
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &287817287
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287817286}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 803903596}
+  - {fileID: 1237600927}
+  - {fileID: 2104351477}
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &332587484
 GameObject:
@@ -1933,7 +1966,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &751301272
 GameObject:
@@ -1967,7 +2000,7 @@ Transform:
   - {fileID: 808235576}
   - {fileID: 1382953931}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &766101844
 GameObject:
@@ -2001,7 +2034,7 @@ Transform:
   - {fileID: 857430441}
   - {fileID: 610418990}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &773993818
 GameObject:
@@ -2129,6 +2162,165 @@ MonoBehaviour:
     - Name: pivot
       Entry: 3
       Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _variables
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+--- !u!1 &782324556
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 782324557}
+  m_Layer: 0
+  m_Name: =====SCENARIO=========
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &782324557
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 782324556}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.23349988, y: -0.07557988, z: 1.4160669}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &803903595
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 803903596}
+  - component: {fileID: 803903597}
+  m_Layer: 0
+  m_Name: VernaQ
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &803903596
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 803903595}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 287817287}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &803903597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 803903595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75dd4d5cfdc460545b5acffb427fc081, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 2100000, guid: b1574ef18d899b64a8232a7e70ea3ac6, type: 2}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Champion
+      Entry: 6
+      Data: 
+    - Name: PreviewConfigs
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[PreviewConfig, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|PreviewConfig, Assembly-CSharp
+    - Name: Material
+      Entry: 10
+      Data: 0
+    - Name: positioner
+      Entry: 7
+      Data: 2|AimToMousePositioner, Assembly-CSharp
+    - Name: useOffset
+      Entry: 5
+      Data: false
+    - Name: offsetVarType
+      Entry: 3
+      Data: 0
+    - Name: offsetVar
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: scaler
+      Entry: 7
+      Data: 3|ScaleToMouseScaler, Assembly-CSharp
+    - Name: meshMode
+      Entry: 3
+      Data: 0
+    - Name: CustomMesh
+      Entry: 6
+      Data: 
+    - Name: Material
+      Entry: 10
+      Data: 0
+    - Name: canScale
+      Entry: 5
+      Data: true
+    - Name: useAngleMask
+      Entry: 5
+      Data: false
+    - Name: angleVar
+      Entry: 6
+      Data: 
+    - Name: areaSizeVar
+      Entry: 1
+      Data: dashArea
+    - Name: limitMaxRange
+      Entry: 5
+      Data: true
+    - Name: limitMinRange
+      Entry: 5
+      Data: false
     - Name: 
       Entry: 8
       Data: 
@@ -2531,7 +2723,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 45.000004, y: 0, z: 0}
 --- !u!1 &1037429040
 GameObject:
@@ -3225,6 +3417,178 @@ Transform:
   m_Father: {fileID: 2138096739}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1237600926
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1237600927}
+  - component: {fileID: 1237600928}
+  m_Layer: 0
+  m_Name: VernaE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1237600927
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1237600926}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 287817287}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1237600928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1237600926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75dd4d5cfdc460545b5acffb427fc081, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 2100000, guid: fc575301c84ddde4092013dc17211498, type: 2}
+    - {fileID: 2100000, guid: f7b76e7c2480b8a4bb31da99871af246, type: 2}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Champion
+      Entry: 6
+      Data: 
+    - Name: PreviewConfigs
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[PreviewConfig, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|PreviewConfig, Assembly-CSharp
+    - Name: Material
+      Entry: 10
+      Data: 0
+    - Name: positioner
+      Entry: 7
+      Data: 2|AimToMousePositioner, Assembly-CSharp
+    - Name: useOffset
+      Entry: 5
+      Data: false
+    - Name: offsetVarType
+      Entry: 3
+      Data: 0
+    - Name: offsetVar
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: scaler
+      Entry: 7
+      Data: 3|ScaleToArea, Assembly-CSharp
+    - Name: meshMode
+      Entry: 3
+      Data: 0
+    - Name: CustomMesh
+      Entry: 6
+      Data: 
+    - Name: Material
+      Entry: 10
+      Data: 1
+    - Name: canScale
+      Entry: 5
+      Data: true
+    - Name: useAngleMask
+      Entry: 5
+      Data: false
+    - Name: angleVar
+      Entry: 6
+      Data: 
+    - Name: areaScaleMode
+      Entry: 3
+      Data: 0
+    - Name: radiusVar
+      Entry: 1
+      Data: radius4
+    - Name: areaInVector3Var
+      Entry: 6
+      Data: 
+    - Name: areaInVector2Var
+      Entry: 6
+      Data: 
+    - Name: areaWidthVar
+      Entry: 6
+      Data: 
+    - Name: areaLengthVar
+      Entry: 6
+      Data: 
+    - Name: pivot
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _variables
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+--- !u!1 &1259587168
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1259587169}
+  m_Layer: 0
+  m_Name: =====CHAMPIONS=========
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1259587169
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259587168}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.23349988, y: -0.07557988, z: 1.4160669}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1382953930
 GameObject:
   m_ObjectHideFlags: 0
@@ -3472,7 +3836,7 @@ Transform:
   - {fileID: 1821074747}
   - {fileID: 1105841852}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1422614034
 GameObject:
@@ -4373,7 +4737,7 @@ Transform:
   - {fileID: 1483805585}
   - {fileID: 672696105}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1766710450
 GameObject:
@@ -5262,7 +5626,7 @@ Transform:
   m_LocalScale: {x: 50, y: 50, z: 50}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2074232162
 GameObject:
@@ -5402,7 +5766,7 @@ MonoBehaviour:
       Data: 
     - Name: pivot
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -5523,7 +5887,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2091336234
 Transform:
   m_ObjectHideFlags: 0
@@ -5540,7 +5904,7 @@ Transform:
   - {fileID: 1534110510}
   - {fileID: 1766710451}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2093100711
 GameObject:
@@ -5573,8 +5937,161 @@ Transform:
   - {fileID: 332587485}
   - {fileID: 674102086}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2104351476
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2104351477}
+  - component: {fileID: 2104351478}
+  m_Layer: 0
+  m_Name: VernaF
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &2104351477
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104351476}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 287817287}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2104351478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104351476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75dd4d5cfdc460545b5acffb427fc081, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 2100000, guid: fc575301c84ddde4092013dc17211498, type: 2}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Champion
+      Entry: 6
+      Data: 
+    - Name: PreviewConfigs
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[PreviewConfig, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|PreviewConfig, Assembly-CSharp
+    - Name: Material
+      Entry: 10
+      Data: 0
+    - Name: positioner
+      Entry: 7
+      Data: 2|FollowMousePositioner, Assembly-CSharp
+    - Name: canRotate
+      Entry: 5
+      Data: false
+    - Name: useMaxRange
+      Entry: 5
+      Data: false
+    - Name: maxDistanceType
+      Entry: 3
+      Data: 0
+    - Name: maxDistanceVar
+      Entry: 1
+      Data: maxDistanceFromOrigin
+    - Name: useMinRange
+      Entry: 5
+      Data: false
+    - Name: minDistanceType
+      Entry: 3
+      Data: 0
+    - Name: minDistanceVar
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: scaler
+      Entry: 7
+      Data: 3|ScaleToArea, Assembly-CSharp
+    - Name: meshMode
+      Entry: 3
+      Data: 0
+    - Name: CustomMesh
+      Entry: 6
+      Data: 
+    - Name: Material
+      Entry: 10
+      Data: 0
+    - Name: canScale
+      Entry: 5
+      Data: true
+    - Name: useAngleMask
+      Entry: 5
+      Data: false
+    - Name: angleVar
+      Entry: 6
+      Data: 
+    - Name: areaScaleMode
+      Entry: 3
+      Data: 0
+    - Name: radiusVar
+      Entry: 1
+      Data: radius5
+    - Name: areaInVector3Var
+      Entry: 6
+      Data: 
+    - Name: areaInVector2Var
+      Entry: 6
+      Data: 
+    - Name: areaWidthVar
+      Entry: 6
+      Data: 
+    - Name: areaLengthVar
+      Entry: 6
+      Data: 
+    - Name: pivot
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _variables
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
 --- !u!1 &2138096738
 GameObject:
   m_ObjectHideFlags: 0
@@ -5605,7 +6122,7 @@ Transform:
   m_Children:
   - {fileID: 1225281597}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2138096740
 MonoBehaviour:

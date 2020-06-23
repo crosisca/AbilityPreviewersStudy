@@ -21,7 +21,14 @@ MonoBehaviour:
   areaLength: 4
   dashArea: {x: 3, y: 1, z: 8}
   areaSizeOfOne: {x: 1, y: 1, z: 1}
+  forward3: {x: 0, y: 0, z: 3}
   areaVec2: {x: 5, y: 10}
   areaVec3: {x: 2, y: 1, z: 6}
   maxDistanceFromOrigin: 10
   areaAngle: 45
+  bannerOFWarOffset: {x: 1, y: 0, z: 2}
+  radius1: 1
+  radius2: 2
+  radius3: 3
+  radius4: 4
+  radius5: 5
