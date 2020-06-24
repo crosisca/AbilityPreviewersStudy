@@ -7,20 +7,25 @@ using UnityEngine;
 
 public class PreviewConfig
 {
-    [SerializeField]
+
+    [Space]
+    [Title("Positioner", titleAlignment: TitleAlignments.Centered)]
+    [SerializeField, Required, HideLabel, InlineProperty]
     public PreviewPositioner positioner;
 
-    [SerializeField]
+    [Title("Scaler", titleAlignment:TitleAlignments.Centered)]
+    [SerializeField, Required, HideLabel, InlineProperty]
     public PreviewScaler scaler;
-
-    [SerializeField]
-    public Material Material { get; set; }
-
+    
     [SerializeField, ShowIf("@UnityEngine.Application.isPlaying")]
-    Dictionary<string, object> _variables;
-    public Dictionary<string, object> Variables => _variables ?? (_variables = new Dictionary<string, object>());
+    Dictionary<string, object> cachedAbilitysValues;
+    public Dictionary<string, object> CachedAbilitysValues => cachedAbilitysValues ?? (cachedAbilitysValues = new Dictionary<string, object>());
 
     AbilityPreviewer previewer;
+
+    //odinhelper
+    //public string InspectorName => $"Positioner:{positioner}\nScaler     :{scaler}";
+    public string InspectorName => $"{positioner}\n{scaler}";
 
     public void Setup(AbilityPreviewer previewer)
     {
@@ -33,7 +38,7 @@ public class PreviewConfig
     
     public void CacheUsedVariables ()
     {
-        Variables.Clear();
+        CachedAbilitysValues.Clear();
         
         AddAbilityDatabaseVariableNameToDictionary(positioner);
         AddAbilityDatabaseVariableNameToDictionary(scaler);
@@ -54,8 +59,8 @@ public class PreviewConfig
 
                 if (!string.IsNullOrEmpty(key))
                 {
-                    if(!Variables.ContainsKey(key))
-                        Variables.Add(key, null);
+                    if(!CachedAbilitysValues.ContainsKey(key))
+                        CachedAbilitysValues.Add(key, null);
                 }
             }
         }
@@ -65,33 +70,33 @@ public class PreviewConfig
     {
         //foreach (FieldInfo fieldInfo in previewer.Ability.GetType().GetFields(BindingFlags.Public | BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.FlattenHierarchy))
         //{
-        //    if (Variables.ContainsKey(fieldInfo.Name))
-        //        Variables[fieldInfo.Name] = fieldInfo.GetValue(previewer.Ability);
+        //    if (CachedAbilitysValues.ContainsKey(fieldInfo.Name))
+        //        CachedAbilitysValues[fieldInfo.Name] = fieldInfo.GetValue(previewer.Ability);
         //}
 
-        //foreach (KeyValuePair<string, object> kvp in Variables)
+        //foreach (KeyValuePair<string, object> kvp in CachedAbilitysValues)
         //{
         //    FieldInfo fieldInfo = previewer.Ability.GetType().GetField(kvp.Key);
         //    if (fieldInfo != null)
-        //        Variables[kvp.Key] = fieldInfo.GetValue(previewer.Ability);
+        //        CachedAbilitysValues[kvp.Key] = fieldInfo.GetValue(previewer.Ability);
         //    else
         //    {
         //        PropertyInfo propertyInfo = previewer.Ability.GetType().GetProperty(kvp.Key);
         //        if (propertyInfo != null)
-        //            Variables[kvp.Key] = propertyInfo.GetValue(previewer.Ability);
+        //            CachedAbilitysValues[kvp.Key] = propertyInfo.GetValue(previewer.Ability);
         //    }
         //}
 
-        foreach (string variableName in Variables.Keys.ToArray())
+        foreach (string variableName in CachedAbilitysValues.Keys.ToArray())
         {
             FieldInfo fieldInfo = previewer.Ability.GetType().GetField(variableName);
             if (fieldInfo != null)
-                Variables[variableName] = fieldInfo.GetValue(previewer.Ability);
+                CachedAbilitysValues[variableName] = fieldInfo.GetValue(previewer.Ability);
             else
             {
                 PropertyInfo propertyInfo = previewer.Ability.GetType().GetProperty(variableName);
                 if (propertyInfo != null)
-                    Variables[variableName] = propertyInfo.GetValue(previewer.Ability);
+                    CachedAbilitysValues[variableName] = propertyInfo.GetValue(previewer.Ability);
             }
         }
     }
@@ -106,7 +111,7 @@ public class PreviewConfig
 
     public T GetValue<T> (string variableName)
     {
-        return (T)Variables[variableName];
+        return (T)CachedAbilitysValues[variableName];
     }
 
     public float GetFloat (string variableName, VariableType varType)

@@ -11,8 +11,8 @@ public abstract class PreviewScaler
 
     [SerializeField, ShowIf("meshMode", MeshMode.CUSTOM)]
     protected GameObject CustomMesh;
-
-    [SerializeField, HideIf("meshMode", MeshMode.CUSTOM)]
+    
+    [SerializeField, HideIf("meshMode", MeshMode.CUSTOM), Required]
     protected Material Material;
 
     [SerializeField]

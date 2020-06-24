@@ -345,9 +345,6 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 1|PreviewConfig, Assembly-CSharp
-    - Name: Material
-      Entry: 10
-      Data: 0
     - Name: positioner
       Entry: 7
       Data: 2|FollowMousePositioner, Assembly-CSharp
@@ -420,7 +417,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: _variables
+    - Name: cachedAbilitysValues
       Entry: 6
       Data: 
     - Name: 
@@ -498,9 +495,6 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 1|PreviewConfig, Assembly-CSharp
-    - Name: Material
-      Entry: 10
-      Data: 0
     - Name: positioner
       Entry: 7
       Data: 2|AimToMousePositioner, Assembly-CSharp
@@ -561,7 +555,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: _variables
+    - Name: cachedAbilitysValues
       Entry: 6
       Data: 
     - Name: 
@@ -639,9 +633,6 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 1|PreviewConfig, Assembly-CSharp
-    - Name: Material
-      Entry: 10
-      Data: 0
     - Name: positioner
       Entry: 7
       Data: 2|FollowMousePositioner, Assembly-CSharp
@@ -714,7 +705,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: _variables
+    - Name: cachedAbilitysValues
       Entry: 6
       Data: 
     - Name: 
@@ -792,9 +783,6 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 1|PreviewConfig, Assembly-CSharp
-    - Name: Material
-      Entry: 10
-      Data: 0
     - Name: positioner
       Entry: 7
       Data: 2|AimToMousePositioner, Assembly-CSharp
@@ -855,7 +843,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: _variables
+    - Name: cachedAbilitysValues
       Entry: 6
       Data: 
     - Name: 
@@ -933,9 +921,6 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 1|PreviewConfig, Assembly-CSharp
-    - Name: Material
-      Entry: 10
-      Data: 0
     - Name: positioner
       Entry: 7
       Data: 2|AimToMousePositioner, Assembly-CSharp
@@ -984,7 +969,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: _variables
+    - Name: cachedAbilitysValues
       Entry: 6
       Data: 
     - Name: 
@@ -1063,9 +1048,6 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 1|PreviewConfig, Assembly-CSharp
-    - Name: Material
-      Entry: 10
-      Data: 0
     - Name: positioner
       Entry: 7
       Data: 2|FollowMousePositioner, Assembly-CSharp
@@ -1138,7 +1120,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: _variables
+    - Name: cachedAbilitysValues
       Entry: 6
       Data: 
     - Name: 
@@ -1147,9 +1129,6 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 4|PreviewConfig, Assembly-CSharp
-    - Name: Material
-      Entry: 10
-      Data: 1
     - Name: positioner
       Entry: 7
       Data: 5|AimToMousePositioner, Assembly-CSharp
@@ -1216,7 +1195,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: _variables
+    - Name: cachedAbilitysValues
       Entry: 6
       Data: 
     - Name: 
@@ -1244,7 +1223,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &556331041
 Transform:
   m_ObjectHideFlags: 0
@@ -1295,9 +1274,6 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 1|PreviewConfig, Assembly-CSharp
-    - Name: Material
-      Entry: 10
-      Data: 0
     - Name: positioner
       Entry: 7
       Data: 2|AimToMousePositioner, Assembly-CSharp
@@ -1346,7 +1322,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: _variables
+    - Name: cachedAbilitysValues
       Entry: 6
       Data: 
     - Name: 
@@ -1355,9 +1331,6 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 4|PreviewConfig, Assembly-CSharp
-    - Name: Material
-      Entry: 10
-      Data: 1
     - Name: positioner
       Entry: 7
       Data: 5|FollowMousePositioner, Assembly-CSharp
@@ -1430,7 +1403,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: _variables
+    - Name: cachedAbilitysValues
       Entry: 6
       Data: 
     - Name: 
@@ -1508,9 +1481,6 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 1|PreviewConfig, Assembly-CSharp
-    - Name: Material
-      Entry: 10
-      Data: 0
     - Name: positioner
       Entry: 7
       Data: 2|AimToMousePositioner, Assembly-CSharp
@@ -1571,7 +1541,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: _variables
+    - Name: cachedAbilitysValues
       Entry: 6
       Data: 
     - Name: 
@@ -1649,9 +1619,6 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 1|PreviewConfig, Assembly-CSharp
-    - Name: Material
-      Entry: 10
-      Data: 0
     - Name: positioner
       Entry: 7
       Data: 2|FollowMousePositioner, Assembly-CSharp
@@ -1724,7 +1691,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: _variables
+    - Name: cachedAbilitysValues
       Entry: 6
       Data: 
     - Name: 
@@ -1802,9 +1769,6 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 1|PreviewConfig, Assembly-CSharp
-    - Name: Material
-      Entry: 10
-      Data: 0
     - Name: positioner
       Entry: 7
       Data: 2|AimToMousePositioner, Assembly-CSharp
@@ -1865,7 +1829,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: _variables
+    - Name: cachedAbilitysValues
       Entry: 6
       Data: 
     - Name: 
@@ -2102,9 +2066,6 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 1|PreviewConfig, Assembly-CSharp
-    - Name: Material
-      Entry: 10
-      Data: 0
     - Name: positioner
       Entry: 7
       Data: 2|AimToMousePositioner, Assembly-CSharp
@@ -2165,7 +2126,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: _variables
+    - Name: cachedAbilitysValues
       Entry: 6
       Data: 
     - Name: 
@@ -2273,9 +2234,6 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 1|PreviewConfig, Assembly-CSharp
-    - Name: Material
-      Entry: 10
-      Data: 0
     - Name: positioner
       Entry: 7
       Data: 2|AimToMousePositioner, Assembly-CSharp
@@ -2324,7 +2282,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: _variables
+    - Name: cachedAbilitysValues
       Entry: 6
       Data: 
     - Name: 
@@ -2402,9 +2360,6 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 1|PreviewConfig, Assembly-CSharp
-    - Name: Material
-      Entry: 10
-      Data: 0
     - Name: positioner
       Entry: 7
       Data: 2|FollowMousePositioner, Assembly-CSharp
@@ -2477,7 +2432,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: _variables
+    - Name: cachedAbilitysValues
       Entry: 6
       Data: 
     - Name: 
@@ -2555,9 +2510,6 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 1|PreviewConfig, Assembly-CSharp
-    - Name: Material
-      Entry: 10
-      Data: 0
     - Name: positioner
       Entry: 7
       Data: 2|FollowMousePositioner, Assembly-CSharp
@@ -2630,7 +2582,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: _variables
+    - Name: cachedAbilitysValues
       Entry: 6
       Data: 
     - Name: 
@@ -2791,9 +2743,6 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 1|PreviewConfig, Assembly-CSharp
-    - Name: Material
-      Entry: 10
-      Data: 0
     - Name: positioner
       Entry: 7
       Data: 2|AimToMousePositioner, Assembly-CSharp
@@ -2854,7 +2803,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: _variables
+    - Name: cachedAbilitysValues
       Entry: 6
       Data: 
     - Name: 
@@ -2933,9 +2882,6 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 1|PreviewConfig, Assembly-CSharp
-    - Name: Material
-      Entry: 10
-      Data: 0
     - Name: positioner
       Entry: 7
       Data: 2|FollowMousePositioner, Assembly-CSharp
@@ -3008,7 +2954,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: _variables
+    - Name: cachedAbilitysValues
       Entry: 6
       Data: 
     - Name: 
@@ -3017,9 +2963,6 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 4|PreviewConfig, Assembly-CSharp
-    - Name: Material
-      Entry: 10
-      Data: 1
     - Name: positioner
       Entry: 7
       Data: 5|FollowMousePositioner, Assembly-CSharp
@@ -3098,7 +3041,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: _variables
+    - Name: cachedAbilitysValues
       Entry: 6
       Data: 
     - Name: 
@@ -3177,9 +3120,6 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 1|PreviewConfig, Assembly-CSharp
-    - Name: Material
-      Entry: 10
-      Data: 0
     - Name: positioner
       Entry: 7
       Data: 2|AimToMousePositioner, Assembly-CSharp
@@ -3228,7 +3168,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: _variables
+    - Name: cachedAbilitysValues
       Entry: 6
       Data: 
     - Name: 
@@ -3237,9 +3177,6 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 4|PreviewConfig, Assembly-CSharp
-    - Name: Material
-      Entry: 10
-      Data: 1
     - Name: positioner
       Entry: 7
       Data: 5|FollowMousePositioner, Assembly-CSharp
@@ -3312,7 +3249,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: _variables
+    - Name: cachedAbilitysValues
       Entry: 6
       Data: 
     - Name: 
@@ -3464,7 +3401,6 @@ MonoBehaviour:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 2100000, guid: fc575301c84ddde4092013dc17211498, type: 2}
     - {fileID: 2100000, guid: f7b76e7c2480b8a4bb31da99871af246, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
@@ -3484,9 +3420,6 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 1|PreviewConfig, Assembly-CSharp
-    - Name: Material
-      Entry: 10
-      Data: 0
     - Name: positioner
       Entry: 7
       Data: 2|AimToMousePositioner, Assembly-CSharp
@@ -3513,7 +3446,7 @@ MonoBehaviour:
       Data: 
     - Name: Material
       Entry: 10
-      Data: 1
+      Data: 0
     - Name: canScale
       Entry: 5
       Data: true
@@ -3547,7 +3480,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: _variables
+    - Name: cachedAbilitysValues
       Entry: 6
       Data: 
     - Name: 
@@ -3588,6 +3521,212 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1359561808
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1359561810}
+  - component: {fileID: 1359561809}
+  m_Layer: 0
+  m_Name: PreviewerTests
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1359561809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359561808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75dd4d5cfdc460545b5acffb427fc081, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Champion
+      Entry: 6
+      Data: 
+    - Name: PreviewConfigs
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[PreviewConfig, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 1|PreviewConfig, Assembly-CSharp
+    - Name: positioner
+      Entry: 7
+      Data: 2|AimToMousePositioner, Assembly-CSharp
+    - Name: useOffset
+      Entry: 5
+      Data: false
+    - Name: offsetVarType
+      Entry: 3
+      Data: 0
+    - Name: offsetVar
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: scaler
+      Entry: 7
+      Data: 3|ScaleToArea, Assembly-CSharp
+    - Name: meshMode
+      Entry: 3
+      Data: 0
+    - Name: CustomMesh
+      Entry: 6
+      Data: 
+    - Name: Material
+      Entry: 6
+      Data: 
+    - Name: canScale
+      Entry: 5
+      Data: false
+    - Name: useAngleMask
+      Entry: 5
+      Data: false
+    - Name: angleVar
+      Entry: 6
+      Data: 
+    - Name: areaScaleMode
+      Entry: 3
+      Data: 0
+    - Name: radiusVar
+      Entry: 6
+      Data: 
+    - Name: areaInVector3Var
+      Entry: 6
+      Data: 
+    - Name: areaInVector2Var
+      Entry: 6
+      Data: 
+    - Name: areaWidthVar
+      Entry: 6
+      Data: 
+    - Name: areaLengthVar
+      Entry: 6
+      Data: 
+    - Name: pivot
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: cachedAbilitysValues
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 4|PreviewConfig, Assembly-CSharp
+    - Name: positioner
+      Entry: 7
+      Data: 5|FollowMousePositioner, Assembly-CSharp
+    - Name: canRotate
+      Entry: 5
+      Data: true
+    - Name: useMaxRange
+      Entry: 5
+      Data: false
+    - Name: maxDistanceType
+      Entry: 3
+      Data: 0
+    - Name: maxDistanceVar
+      Entry: 6
+      Data: 
+    - Name: useMinRange
+      Entry: 5
+      Data: false
+    - Name: minDistanceType
+      Entry: 3
+      Data: 0
+    - Name: minDistanceVar
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: scaler
+      Entry: 7
+      Data: 6|ScaleToMouseScaler, Assembly-CSharp
+    - Name: meshMode
+      Entry: 3
+      Data: 0
+    - Name: CustomMesh
+      Entry: 6
+      Data: 
+    - Name: Material
+      Entry: 6
+      Data: 
+    - Name: canScale
+      Entry: 5
+      Data: false
+    - Name: useAngleMask
+      Entry: 5
+      Data: false
+    - Name: angleVar
+      Entry: 6
+      Data: 
+    - Name: areaSizeVar
+      Entry: 6
+      Data: 
+    - Name: limitMaxRange
+      Entry: 5
+      Data: false
+    - Name: limitMinRange
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: cachedAbilitysValues
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+--- !u!4 &1359561810
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359561808}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1382953930
 GameObject:
@@ -3636,7 +3775,6 @@ MonoBehaviour:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 2100000, guid: fc575301c84ddde4092013dc17211498, type: 2}
     - {fileID: 2100000, guid: f7b76e7c2480b8a4bb31da99871af246, type: 2}
     - {fileID: 1446781507269518391, guid: d5700d1e65308004882acef520b2401a, type: 3}
     SerializedBytesString: 
@@ -3657,9 +3795,6 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 1|PreviewConfig, Assembly-CSharp
-    - Name: Material
-      Entry: 10
-      Data: 0
     - Name: positioner
       Entry: 7
       Data: 2|AimToMousePositioner, Assembly-CSharp
@@ -3686,7 +3821,7 @@ MonoBehaviour:
       Data: 
     - Name: Material
       Entry: 10
-      Data: 1
+      Data: 0
     - Name: canScale
       Entry: 5
       Data: true
@@ -3720,7 +3855,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: _variables
+    - Name: cachedAbilitysValues
       Entry: 6
       Data: 
     - Name: 
@@ -3729,9 +3864,6 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 4|PreviewConfig, Assembly-CSharp
-    - Name: Material
-      Entry: 6
-      Data: 
     - Name: positioner
       Entry: 7
       Data: 5|AimToMousePositioner, Assembly-CSharp
@@ -3755,7 +3887,7 @@ MonoBehaviour:
       Data: 2
     - Name: CustomMesh
       Entry: 10
-      Data: 2
+      Data: 1
     - Name: Material
       Entry: 6
       Data: 
@@ -3792,7 +3924,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: _variables
+    - Name: cachedAbilitysValues
       Entry: 6
       Data: 
     - Name: 
@@ -3906,9 +4038,6 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 1|PreviewConfig, Assembly-CSharp
-    - Name: Material
-      Entry: 10
-      Data: 0
     - Name: positioner
       Entry: 7
       Data: 2|FollowMousePositioner, Assembly-CSharp
@@ -3981,7 +4110,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: _variables
+    - Name: cachedAbilitysValues
       Entry: 6
       Data: 
     - Name: 
@@ -3990,9 +4119,6 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 4|PreviewConfig, Assembly-CSharp
-    - Name: Material
-      Entry: 10
-      Data: 1
     - Name: positioner
       Entry: 7
       Data: 5|FollowMousePositioner, Assembly-CSharp
@@ -4071,7 +4197,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: _variables
+    - Name: cachedAbilitysValues
       Entry: 6
       Data: 
     - Name: 
@@ -4080,9 +4206,6 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 7|PreviewConfig, Assembly-CSharp
-    - Name: Material
-      Entry: 10
-      Data: 2
     - Name: positioner
       Entry: 7
       Data: 8|AimToMousePositioner, Assembly-CSharp
@@ -4143,7 +4266,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: _variables
+    - Name: cachedAbilitysValues
       Entry: 6
       Data: 
     - Name: 
@@ -4222,9 +4345,6 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 1|PreviewConfig, Assembly-CSharp
-    - Name: Material
-      Entry: 10
-      Data: 0
     - Name: positioner
       Entry: 7
       Data: 2|FollowMousePositioner, Assembly-CSharp
@@ -4297,7 +4417,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: _variables
+    - Name: cachedAbilitysValues
       Entry: 6
       Data: 
     - Name: 
@@ -4306,9 +4426,6 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 4|PreviewConfig, Assembly-CSharp
-    - Name: Material
-      Entry: 10
-      Data: 1
     - Name: positioner
       Entry: 7
       Data: 5|FollowMousePositioner, Assembly-CSharp
@@ -4387,7 +4504,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: _variables
+    - Name: cachedAbilitysValues
       Entry: 6
       Data: 
     - Name: 
@@ -4465,9 +4582,6 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 1|PreviewConfig, Assembly-CSharp
-    - Name: Material
-      Entry: 10
-      Data: 0
     - Name: positioner
       Entry: 7
       Data: 2|FollowMousePositioner, Assembly-CSharp
@@ -4540,7 +4654,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: _variables
+    - Name: cachedAbilitysValues
       Entry: 6
       Data: 
     - Name: 
@@ -4618,9 +4732,6 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 1|PreviewConfig, Assembly-CSharp
-    - Name: Material
-      Entry: 10
-      Data: 0
     - Name: positioner
       Entry: 7
       Data: 2|FollowMousePositioner, Assembly-CSharp
@@ -4693,7 +4804,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: _variables
+    - Name: cachedAbilitysValues
       Entry: 6
       Data: 
     - Name: 
@@ -4805,9 +4916,6 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 1|PreviewConfig, Assembly-CSharp
-    - Name: Material
-      Entry: 10
-      Data: 0
     - Name: positioner
       Entry: 7
       Data: 2|FollowMousePositioner, Assembly-CSharp
@@ -4880,7 +4988,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: _variables
+    - Name: cachedAbilitysValues
       Entry: 6
       Data: 
     - Name: 
@@ -5050,9 +5158,6 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 1|PreviewConfig, Assembly-CSharp
-    - Name: Material
-      Entry: 10
-      Data: 0
     - Name: positioner
       Entry: 7
       Data: 2|FollowMousePositioner, Assembly-CSharp
@@ -5125,7 +5230,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: _variables
+    - Name: cachedAbilitysValues
       Entry: 6
       Data: 
     - Name: 
@@ -5203,9 +5308,6 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 1|PreviewConfig, Assembly-CSharp
-    - Name: Material
-      Entry: 10
-      Data: 0
     - Name: positioner
       Entry: 7
       Data: 2|AimToMousePositioner, Assembly-CSharp
@@ -5266,7 +5368,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: _variables
+    - Name: cachedAbilitysValues
       Entry: 6
       Data: 
     - Name: 
@@ -5344,9 +5446,6 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 1|PreviewConfig, Assembly-CSharp
-    - Name: Material
-      Entry: 10
-      Data: 0
     - Name: positioner
       Entry: 7
       Data: 2|AimToMousePositioner, Assembly-CSharp
@@ -5395,7 +5494,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: _variables
+    - Name: cachedAbilitysValues
       Entry: 6
       Data: 
     - Name: 
@@ -5473,9 +5572,6 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 1|PreviewConfig, Assembly-CSharp
-    - Name: Material
-      Entry: 10
-      Data: 0
     - Name: positioner
       Entry: 7
       Data: 2|AimToMousePositioner, Assembly-CSharp
@@ -5524,7 +5620,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: _variables
+    - Name: cachedAbilitysValues
       Entry: 6
       Data: 
     - Name: 
@@ -5695,9 +5791,6 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 1|PreviewConfig, Assembly-CSharp
-    - Name: Material
-      Entry: 10
-      Data: 0
     - Name: positioner
       Entry: 7
       Data: 2|FollowMousePositioner, Assembly-CSharp
@@ -5770,7 +5863,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: _variables
+    - Name: cachedAbilitysValues
       Entry: 6
       Data: 
     - Name: 
@@ -5779,9 +5872,6 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 4|PreviewConfig, Assembly-CSharp
-    - Name: Material
-      Entry: 10
-      Data: 1
     - Name: positioner
       Entry: 7
       Data: 5|FollowMousePositioner, Assembly-CSharp
@@ -5860,7 +5950,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: _variables
+    - Name: cachedAbilitysValues
       Entry: 6
       Data: 
     - Name: 
@@ -6005,9 +6095,6 @@ MonoBehaviour:
     - Name: 
       Entry: 7
       Data: 1|PreviewConfig, Assembly-CSharp
-    - Name: Material
-      Entry: 10
-      Data: 0
     - Name: positioner
       Entry: 7
       Data: 2|FollowMousePositioner, Assembly-CSharp
@@ -6080,7 +6167,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: _variables
+    - Name: cachedAbilitysValues
       Entry: 6
       Data: 
     - Name: 

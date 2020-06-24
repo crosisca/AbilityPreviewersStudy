@@ -4,19 +4,35 @@ using System.Linq;
 using System.Reflection;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
+using Sirenix.Utilities.Editor;
 using UnityEngine;
 
 public class AbilityPreviewer : SerializedMonoBehaviour
 {
     public Ability Ability { get; private set; }
 
-    [SerializeField]
+    [SerializeField, HideInInspector]
     public Transform Champion { get; private set; }
 
+    [Title("List of Previewers")]
+    [ListDrawerSettings(Expanded = true, DraggableItems = false, ListElementLabelName = "InspectorName", OnEndListElementGUI = "EndDrawListElement", CustomAddFunction = "CustomAddFunction")]
     public List<PreviewConfig> PreviewConfigs = new List<PreviewConfig>();
 
     public Vector3 MouseHitPosition { get; private set; }
-    
+
+    #region Odin
+     void EndDrawListElement (int index)
+    {
+        GUILayout.Space(15);
+    }
+
+    void CustomAddFunction()
+    {
+        PreviewConfigs.Add(new PreviewConfig());
+    }
+
+    #endregion
+
     void Awake()
     {
         if (Champion == null)
@@ -25,6 +41,12 @@ public class AbilityPreviewer : SerializedMonoBehaviour
         Ability = Champion.GetComponent<Champion>().ability;
 
         CacheAbilityValues();
+    }
+
+    void Reset()
+    {
+        PreviewConfigs.Clear();
+        PreviewConfigs.Add(new PreviewConfig());
     }
     
     void CacheAbilityValues()
