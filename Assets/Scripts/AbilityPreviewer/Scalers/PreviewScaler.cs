@@ -4,7 +4,7 @@ using UnityEngine;
 using Object = UnityEngine.Object;
 
 [Serializable]
-public abstract class PreviewScaler
+public abstract class PreviewScaler : IBoxedDrawable
 {
     [SerializeField]
     protected MeshMode meshMode = MeshMode.QUAD;

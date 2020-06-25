@@ -2,7 +2,7 @@
 using UnityEngine;
 
 [Serializable]
-public abstract class PreviewPositioner
+public abstract class PreviewPositioner : IBoxedDrawable
 {
     protected AbilityPreviewer previewer;
 

@@ -11,10 +11,12 @@ public class PreviewConfig
     [Space]
     [Title("Positioner", titleAlignment: TitleAlignments.Centered)]
     [SerializeField, Required, HideLabel, InlineProperty]
+    //[BoxGroup]
     public PreviewPositioner positioner;
 
     [Title("Scaler", titleAlignment:TitleAlignments.Centered)]
     [SerializeField, Required, HideLabel, InlineProperty]
+    //[BoxGroup]
     public PreviewScaler scaler;
     
     [SerializeField, ShowIf("@UnityEngine.Application.isPlaying")]
